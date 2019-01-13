@@ -53,6 +53,11 @@ class Login extends Component {
                             value={this.state.password}
                         />
                     </div>
+                    <div className="form-group">
+                        <button type="submit" className="btn btn-pri    mary">
+                            Login
+                    </button>
+                    </div>
                 </form>
             </div>
         )

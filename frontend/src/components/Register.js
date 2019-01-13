@@ -54,7 +54,7 @@ class Register extends Component {
                             className="form-control"
                             name="email"
                             onChange={this.handleInputChange}
-                            value={this.state.name}
+                            value={this.state.email}
                         />
                     </div>
                     <div className="form-group">
