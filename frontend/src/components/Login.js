@@ -41,7 +41,7 @@ class Login extends Component {
                             <Image src='/logo.png' /> Log-in to your account
                         </Header>
 
-                        <Form size='large' >
+                        <Form onSubmit={this.handleSubmit} size='large' >
                             <Segment stacked>
                                 <Form.Input
                                     icon='user'
@@ -49,7 +49,6 @@ class Login extends Component {
                                     type="email"
                                     placeholder="Email"
                                     name="email"
-                                    onSubmit={this.handleSubmit}
                                     onChange={this.handleInputChange}
                                     value={this.state.email}
                                 />
