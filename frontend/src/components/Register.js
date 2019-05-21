@@ -61,7 +61,7 @@ class Register extends Component {
                         <Form onSubmit={this.handleSubmit} size='large'>
                             <Segment stacked>
                                 <Form.Input
-                                    icon=''
+                                    icon='user'
                                     iconPosition='left'
                                     type="text"
                                     placeholder="Name"
@@ -74,7 +74,7 @@ class Register extends Component {
 
                                 <Form.Input
                                     fluid
-                                    icon='user'
+                                    icon='at'
                                     iconPosition='left'
                                     type="email"
                                     placeholder="Email"

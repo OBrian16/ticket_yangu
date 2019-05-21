@@ -44,7 +44,7 @@ class Login extends Component {
                         <Form onSubmit={this.handleSubmit} size='large' >
                             <Segment stacked>
                                 <Form.Input
-                                    icon='user'
+                                    icon='at'
                                     iconPosition='left'
                                     type="email"
                                     placeholder="Email"
