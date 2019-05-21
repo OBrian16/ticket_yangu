@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+
 
 class Login extends Component {
 
@@ -30,35 +32,49 @@ class Login extends Component {
 
     render() {
         return (
-            <div className="container" style={{ marginTop: '50px', width: '700px' }}>
-                <h2 style={{ marginBottom: '40px' }}> Login </h2>
-                <form onSubmit={this.handleSubmit}>
-                    <div className="form-group">
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            className="form-control"
-                            name="email"
-                            onChange={this.handleInputChange}
-                            value={this.state.email}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <input
-                            type="password"
-                            placeholder="Password"
-                            className="form-control"
-                            name="password"
-                            onChange={this.handleInputChange}
-                            value={this.state.password}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <button type="submit" className="btn btn-primary">
-                            Login
-                    </button>
-                    </div>
-                </form>
+            <div className="container"
+                style={{ marginTop: '50px', width: '700px' }}>
+                <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
+                    <Grid.Column style={{ maxWidth: 450 }}>
+
+                        <Header as='h2' color='teal' textAlign='center'>
+                            <Image src='/logo.png' /> Log-in to your account
+                        </Header>
+
+                        <Form size='large' >
+                            <Segment stacked>
+                                <Form.Input
+                                    icon='user'
+                                    iconPosition='left'
+                                    type="email"
+                                    placeholder="Email"
+                                    name="email"
+                                    onSubmit={this.handleSubmit}
+                                    onChange={this.handleInputChange}
+                                    value={this.state.email}
+                                />
+                                <Form.Input
+                                    fluid
+                                    icon='lock'
+                                    iconPosition='left'
+                                    type="password"
+                                    placeholder="Password"
+                                    name="password"
+                                    onChange={this.handleInputChange}
+                                    value={this.state.password}
+                                />
+                                <Button color='teal' fluid size='large'>
+                                    Login
+                                </Button>
+                            </Segment>
+                        </Form>
+
+                        <Message>
+                            New to us? <a href=''>Sign Up</a>
+                        </Message>
+
+                    </Grid.Column>
+                </Grid>
             </div>
         )
     }
