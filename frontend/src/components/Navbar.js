@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Menu, Icon, } from 'semantic-ui-react';
+import { Button, Menu, Icon, Label } from 'semantic-ui-react';
 
 class Navbar extends Component {
     state = { activeItem: 'home' }
@@ -37,20 +37,28 @@ class Navbar extends Component {
                 />
 
                 <Menu.Menu position='right'>
-                    <Menu.Item as={Link} name='Login' to="Login">
-                        <Button primary>Login</Button>
-                    </Menu.Item>
+                    <Menu.Item>
+                        <Button as={Link} name='login' to='Login' color='red' labelPosition='right'>
+                            <Button color='red'>
+                                <Icon name='lock' />
+                                Login
+                            </Button>
+                        </Button>
 
-                    <Menu.Item as={Link} name='Register' to="Register">
-                        <Button primary>Register</Button>
-                    </Menu.Item>
+                        <Button as={Link} name='register' to='Register' labelPosition='right'>
+                            <Button color='blue'>
+                                <Icon name='user' />
+                                Register
+                            </Button>
+                        </Button>
 
-                    <Menu.Item as={Link} name='Check Ticket' to="#">
-                        <Button primary>Ticket</Button>
                     </Menu.Item>
                 </Menu.Menu>
             </Menu >
         )
     }
 }
+
+
+
 export default Navbar;
