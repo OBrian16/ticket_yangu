@@ -44,6 +44,10 @@ class Navbar extends Component {
                     <Menu.Item as={Link} name='Register' to="Register">
                         <Button primary>Register</Button>
                     </Menu.Item>
+
+                    <Menu.Item as={Link} name='Check Ticket' to="#">
+                        <Button primary>Ticket</Button>
+                    </Menu.Item>
                 </Menu.Menu>
             </Menu >
         )
