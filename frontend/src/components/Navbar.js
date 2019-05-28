@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Menu, Icon, Label } from 'semantic-ui-react';
+import { Button, Menu, Icon, Image } from 'semantic-ui-react';
 
 class Navbar extends Component {
     state = { activeItem: 'home' }
@@ -16,10 +16,22 @@ class Navbar extends Component {
 
         return (
             <Menu size='large'>
-                <Menu.Item as={Link} name='home' to='/'
-                    activeItem={activeItem === 'home'}
-                    onClick={this.handleItemClick}
-                />
+
+                <Menu.Menu position=''>
+                    <Image
+                        src=''
+                        as={Link} to='/'
+                        size='tiny'
+                    />
+                </Menu.Menu>
+
+                <Menu icon='labeled'>
+                    <Menu.Item as={Link} name='home' to='/'
+                        activeItem={activeItem === 'home'}
+                        onClick={this.handleItemClick}>
+                        <Icon name='home' />
+                    </Menu.Item>
+                </Menu>
 
                 <Menu.Item as={Link} name='events' to='#'
                     activeItem={activeItem === 'events'}
@@ -38,18 +50,20 @@ class Navbar extends Component {
 
                 <Menu.Menu position='right'>
                     <Menu.Item>
-                        <Button as={Link} name='login' to='Login' color='red' labelPosition='right'>
-                            <Button color='red'>
-                                <Icon name='lock' />
-                                Login
-                            </Button>
+
+                        <Button as={Link} name='login' to='Login' color='red' >
+                            <Icon name='lock' />
+                            Login
                         </Button>
 
-                        <Button as={Link} name='register' to='Register' labelPosition='right'>
-                            <Button color='blue'>
-                                <Icon name='user' />
-                                Register
-                            </Button>
+                        <Button as={Link} name='register' to='Register' color='blue' >
+                            <Icon name='user' />
+                            Register
+                        </Button>
+
+                        <Button as={Link} name='tickets' to='Tickets' color='teal' >
+                            <Icon name='ticket' />
+                            Tickets
                         </Button>
 
                     </Menu.Item>
