@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Menu, Icon, Image } from 'semantic-ui-react';
+import { Button, Menu, Icon, Image, Divider } from 'semantic-ui-react';
+import Logo from './Header'
 
 class Navbar extends Component {
     state = { activeItem: 'home' }
@@ -17,12 +18,8 @@ class Navbar extends Component {
         return (
             <Menu size='large'>
 
-                <Menu.Menu position=''>
-                    <Image
-                        src=''
-                        as={Link} to='/'
-                        size='tiny'
-                    />
+                <Menu.Menu position='' size='tiny'>
+                    <Logo />
                 </Menu.Menu>
 
                 <Menu icon='labeled'>
@@ -33,7 +30,7 @@ class Navbar extends Component {
                     </Menu.Item>
                 </Menu>
 
-                <Menu.Item as={Link} name='events' to='#'
+                <Menu.Item as={Link} name='events' to='Events'
                     activeItem={activeItem === 'events'}
                     onClick={this.handleItemClick}
                 />
@@ -51,11 +48,11 @@ class Navbar extends Component {
                 <Menu.Menu position='right'>
                     <Menu.Item>
 
-                        <Button as={Link} name='login' to='Login' color='red' >
+                        <Button as={Link} name='login' to='Login' color='grey' >
                             <Icon name='lock' />
                             Login
                         </Button>
-
+                                <Divider />
                         <Button as={Link} name='register' to='Register' color='blue' >
                             <Icon name='user' />
                             Register
