@@ -18,8 +18,10 @@ class Navbar extends Component {
         return (
             <Menu size='large'>
 
-                <Menu.Menu position='' size='tiny'>
-                    <Logo />
+                <Menu.Menu size='tiny'>
+                    <Image size='small' position='center'>
+                        <Logo />
+                    </Image>
                 </Menu.Menu>
 
                 <Menu icon='labeled'>
@@ -52,7 +54,7 @@ class Navbar extends Component {
                             <Icon name='lock' />
                             Login
                         </Button>
-                                <Divider />
+                        <Divider />
                         <Button as={Link} name='register' to='Register' color='blue' >
                             <Icon name='user' />
                             Register
