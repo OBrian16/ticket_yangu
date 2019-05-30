@@ -8,7 +8,7 @@ class Header extends Component {
     render() {
         return <header>
             <ul>
-                <li><Link to='/Home' id="company"><img src={Logo} alt="logo" /></Link></li>
+                <li><Link to='/' id="company"><img src={Logo} alt="logo" /></Link></li>
             </ul>
         </header>
     };
