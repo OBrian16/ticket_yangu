@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { Container, Divider, Grid, Header, Icon } from 'semantic-ui-react'
+import { Container, Divider, Grid, Header, Image } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
+
 
 
 class Events extends Component {
@@ -12,12 +14,12 @@ class Events extends Component {
               }
               p {
                 align-content: center;
-                background-color: #495285;
+                background-color: #BFC9CA;
                 color: #fff;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                min-height: 20em;
+                min-height: 18em;
               }
               p > span {
                 opacity: 0.4;
@@ -31,8 +33,15 @@ class Events extends Component {
                     Celled
                 </Header>
 
-                <Grid columns={3}>
+                <Grid columns={4}>
                     <Grid.Row>
+                        <Grid.Column>
+                            <Image as={Link} name='events' to='Events'
+                                bordered rounded size='huge'
+                                src='/images/white-image.png'
+                            />
+
+                        </Grid.Column>
                         <Grid.Column>
                             <p />
                         </Grid.Column>
@@ -44,6 +53,9 @@ class Events extends Component {
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row>
+                        <Grid.Column>
+                            <p />
+                        </Grid.Column>
                         <Grid.Column>
                             <p />
                         </Grid.Column>
