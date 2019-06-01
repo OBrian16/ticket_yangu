@@ -12,13 +12,13 @@ const ImageCarousel = () => (
   >
     <Slider>
       <Slide tag="a" index={0}>
-        <Image src="https://lorempixel.com/800/800/cats/0" />
+        <Image src="/0" />
       </Slide>
       <Slide tag="a" index={1}>
-        <Image src="https://lorempixel.com/800/800/cats/1" />
+        <Image src="/1" />
       </Slide>
       <Slide tag="a" index={2}>
-        <Image src="https://lorempixel.com/800/800/cats/2" />
+        <Image src="/2" />
       </Slide>
     </Slider>
 

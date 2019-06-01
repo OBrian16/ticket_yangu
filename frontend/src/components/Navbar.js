@@ -50,7 +50,7 @@ class Navbar extends Component {
                 <Menu.Menu position='right'>
 
                         <Menu.Item>
-                            <Button as={Link} name='login' to='Login' color='grey' >
+                            <Button as={Link} name='login' to='Login' color='red' >
                                 <Icon name='lock' />
                                 Login
                             </Button>
