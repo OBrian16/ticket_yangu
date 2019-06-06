@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { loginUser } from '../actions/authentification';
 
 
 class Login extends Component {
@@ -27,7 +30,16 @@ class Login extends Component {
             email: this.state.email,
             password: this.state.password,
         }
-        console.log(user);
+        this.props.loginUser(user);
+    }
+
+    componentWillReceiveProps(nextProps) {
+
+        if (nextProps.errors) {
+            this.setState({
+                errors: nextProps.errors
+            });
+        }
     }
 
     render() {
@@ -79,4 +91,12 @@ class Login extends Component {
     }
 }
 
-export default Login;
+Login.propTypes = {
+    errors: PropTypes.object.isRequired
+}
+
+const mapStateToProps = (state) => ({
+    errors: state.errors
+})
+
+export  default connect(mapStateToProps, { loginUser })(Login)
