@@ -16,7 +16,7 @@ class Navbar extends Component {
         const { activeItem } = this.state
 
         return (
-            <Menu size='small'>
+            <Menu size='small' fixed=''>
 
                 <Menu.Menu size='tiny'>
                     <Image size='small' position='center'>
@@ -49,26 +49,26 @@ class Navbar extends Component {
 
                 <Menu.Menu position='right'>
 
-                        <Menu.Item>
-                            <Button as={Link} name='login' to='Login' color='red' >
-                                <Icon name='lock' />
-                                Login
+                    <Menu.Item>
+                        <Button as={Link} name='login' to='Login' color='red' >
+                            <Icon name='lock' />
+                            Login
                             </Button>
-                        </Menu.Item>
+                    </Menu.Item>
 
-                        <Menu.Item>
-                            <Button as={Link} name='register' to='Register' color='blue' >
-                                <Icon name='user' />
-                                Register
+                    <Menu.Item>
+                        <Button as={Link} name='register' to='Register' color='blue' >
+                            <Icon name='user' />
+                            Register
                             </Button>
-                        </Menu.Item>
+                    </Menu.Item>
 
-                        <Menu.Item>
-                            <Button as={Link} name='tickets' to='Tickets' color='teal' >
-                                <Icon name='ticket' />
-                                Tickets
+                    <Menu.Item>
+                        <Button as={Link} name='tickets' to='Tickets' color='teal' >
+                            <Icon name='ticket' />
+                            Tickets
                             </Button>
-                        </Menu.Item>
+                    </Menu.Item>
 
                 </Menu.Menu>
             </Menu >
