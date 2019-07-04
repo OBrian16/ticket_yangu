@@ -3,7 +3,6 @@ import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDB
   "mdbreact";
 import { Link } from 'react-router-dom';
 
-
 const CarouselPage = () => {
   return (
     <MDBContainer>
@@ -24,13 +23,14 @@ const CarouselPage = () => {
                     id="company">
                     <img
                       className="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                      src={require('../images/nwf.png')}
                       alt="First Slide"
                     />
                   </Link>
                 </li>
               </ul>
               <MDBMask overlay="black-light" />
+
             </MDBView>
             <MDBCarouselCaption>
               <h3 className="h3-responsive">Light mask</h3>
@@ -47,7 +47,7 @@ const CarouselPage = () => {
                     id="company">
                     <img
                       className="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                      src={require('../images/korogafest.png')}
                       alt="Second Slide"
                     />
                   </Link>
@@ -70,7 +70,7 @@ const CarouselPage = () => {
                     id="company">
                     <img
                       className="d-block w-100"
-                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                      src={require('../images/hhh.png')}
                       alt="Third Slide"
                     />
                   </Link>
