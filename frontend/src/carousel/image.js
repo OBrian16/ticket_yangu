@@ -30,12 +30,7 @@ const CarouselPage = () => {
                 </li>
               </ul>
               <MDBMask overlay="black-light" />
-
             </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Light mask</h3>
-              <p>First text</p>
-            </MDBCarouselCaption>
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId="2">
@@ -55,10 +50,6 @@ const CarouselPage = () => {
               </ul>
               <MDBMask overlay="black-strong" />
             </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Strong mask</h3>
-              <p>Second text</p>
-            </MDBCarouselCaption>
           </MDBCarouselItem>
 
           <MDBCarouselItem itemId="3">
@@ -78,11 +69,8 @@ const CarouselPage = () => {
               </ul>
               <MDBMask overlay="black-slight" />
             </MDBView>
-            <MDBCarouselCaption>
-              <h3 className="h3-responsive">Slight Mast</h3>
-              <p>Third text</p>
-            </MDBCarouselCaption>
           </MDBCarouselItem>
+
         </MDBCarouselInner>
       </MDBCarousel>
     </MDBContainer>
