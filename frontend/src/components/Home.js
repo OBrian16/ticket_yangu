@@ -4,6 +4,7 @@ import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Resp
 
 import Footer from '../pages/footer'
 import CarouselPage from '../carousel/image'
+import EventCard from '../pages/cards'
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -56,14 +57,31 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
-        <Segment style={{ padding: '8em 0em' }} vertical>
+        <Segment
+            textAlign='center'
+            style={{ padding: '1em' }}
+            vertical>
+            <Header as='h2'>
+                Upcoming Events
+            <Header.Subheader>Buy and Book Events Tickets in Advance</Header.Subheader>
+            </Header>
+
+            <Grid>
+                <Grid.Column width={8}>
+                </Grid.Column>
+                <Grid.Column width={8}>
+                    <Button content='More Events' color='red' icon='calendar alternate outline' />
+                </Grid.Column>
+            </Grid>
 
         </Segment>
-        <Segment style={{ padding: '0em' }} vertical>
-            
+
+        <Segment style={{ padding: '3em 30em' }} vertical>
+            <EventCard />
         </Segment>
+
         <Segment style={{ padding: '8em 0em' }} vertical>
-            
+
         </Segment>
 
         <Segment inverted vertical style={{ padding: '0em 0em' }}>
