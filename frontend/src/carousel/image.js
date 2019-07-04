@@ -1,6 +1,8 @@
 import React from "react";
 import { MDBCarousel, MDBCarouselCaption, MDBCarouselInner, MDBCarouselItem, MDBView, MDBMask, MDBContainer } from
   "mdbreact";
+import { Link } from 'react-router-dom';
+
 
 const CarouselPage = () => {
   return (
@@ -15,11 +17,19 @@ const CarouselPage = () => {
         <MDBCarouselInner>
           <MDBCarouselItem itemId="1">
             <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
-                alt="First slide"
-              />
+              <ul>
+                <li>
+                  <Link
+                    to='/'
+                    id="company">
+                    <img
+                      className="d-block w-100"
+                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg"
+                      alt="First Slide"
+                    />
+                  </Link>
+                </li>
+              </ul>
               <MDBMask overlay="black-light" />
             </MDBView>
             <MDBCarouselCaption>
@@ -27,13 +37,22 @@ const CarouselPage = () => {
               <p>First text</p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
+
           <MDBCarouselItem itemId="2">
             <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
-                alt="Second slide"
-              />
+              <ul>
+                <li>
+                  <Link
+                    to='/'
+                    id="company">
+                    <img
+                      className="d-block w-100"
+                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg"
+                      alt="Second Slide"
+                    />
+                  </Link>
+                </li>
+              </ul>
               <MDBMask overlay="black-strong" />
             </MDBView>
             <MDBCarouselCaption>
@@ -41,13 +60,22 @@ const CarouselPage = () => {
               <p>Second text</p>
             </MDBCarouselCaption>
           </MDBCarouselItem>
+
           <MDBCarouselItem itemId="3">
             <MDBView>
-              <img
-                className="d-block w-100"
-                src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
-                alt="Third slide"
-              />
+              <ul>
+                <li>
+                  <Link
+                    to='/'
+                    id="company">
+                    <img
+                      className="d-block w-100"
+                      src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg"
+                      alt="Third Slide"
+                    />
+                  </Link>
+                </li>
+              </ul>
               <MDBMask overlay="black-slight" />
             </MDBView>
             <MDBCarouselCaption>
