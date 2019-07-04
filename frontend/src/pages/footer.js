@@ -13,20 +13,6 @@ import {
 } from 'semantic-ui-react'
 import SocialLink from './social'
 
-// Heads up!
-// We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
-// For more advanced usage please check Responsive docs under the "Usage" section.
-const getWidth = () => {
-    const isSSR = typeof window === 'undefined'
-  
-    return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
-  }
-  
-  /* eslint-disable react/no-multi-comp */
-  /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
-   * such things.
-   */
-
 const Footer = () => (
     <div>
         <Segment inverted vertical style={{ minWidth:700, padding: '5em 0em' }}>
