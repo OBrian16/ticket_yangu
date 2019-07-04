@@ -24,9 +24,10 @@ class DesktopContainer extends Component {
         const { fixed } = this.state
 
         return (
+            
             <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
                 <Segment
-                    //inverted
+                    secondary
                     textAlign='center'
                     style={{ minHeight: 300, padding: '2em 0em' }}
                     vertical
@@ -61,22 +62,24 @@ const HomepageLayout = () => (
             textAlign='center'
             style={{ padding: '1em' }}
             vertical>
-            <Header as='h2'>
-                Upcoming Events
-            <Header.Subheader>Buy and Book Events Tickets in Advance</Header.Subheader>
-            </Header>
-
             <Grid>
-                <Grid.Column width={8}>
+                <Grid.Column floated='right' width={4}>
+                    <Header as='h2' textAlign=''>
+                        Upcoming Events
+                            <Header.Subheader>
+                            Buy and Book Events Tickets in Advance
+                            </Header.Subheader>
+                    </Header>
                 </Grid.Column>
-                <Grid.Column width={8}>
+
+                <Grid.Column floated='left' width={4}>
                     <Button content='More Events' color='red' icon='calendar alternate outline' />
                 </Grid.Column>
             </Grid>
 
         </Segment>
 
-        <Segment style={{ padding: '3em 30em' }} vertical>
+        <Segment style={{ padding: '3em 30em' }} vertical secondary>
             <EventCard />
         </Segment>
 
