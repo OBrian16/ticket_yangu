@@ -6,7 +6,7 @@ import { Card, Icon, Image, CardGroup, Button, Divider, Segment } from 'semantic
 const EventCard = () => (
     <Card.Group itemsPerRow={4}>
 
-        <Card link>
+        <Card color='grey' link>
             <Image src={require('../images/eventImages/dfd.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -15,7 +15,7 @@ const EventCard = () => (
             </Card.Content>
         </Card>
 
-        <Card link>
+        <Card color='grey' link>
             <Image src={require('../images/eventImages/ols.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -25,7 +25,7 @@ const EventCard = () => (
             </Card.Content>
         </Card>
 
-        <Card link>
+        <Card color='grey' link>
             <Image src={require('../images/eventImages/etana.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -35,7 +35,7 @@ const EventCard = () => (
             </Card.Content>
         </Card>
 
-        <Card link>
+        <Card color='grey' link>
             <Image src={require('../images/eventImages/mkms.jpg')}
                 wrapped ui={false} />
             <Card.Content>
