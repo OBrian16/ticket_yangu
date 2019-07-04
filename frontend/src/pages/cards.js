@@ -5,7 +5,9 @@ const EventCard = () => (
     <Card.Group itemsPerRow={4}>
 
         <Card>
-            <Image src='/images/avatar/large/daniel.jpg' wrapped ui={false} />
+        <Image src={require('../images/eventImages/dfd.jpg')}
+            
+            wrapped ui={false} />
             <Card.Content>
                 <Card.Header>Event 1</Card.Header>
                 <Card.Meta><b><code>26TH JULY</code></b></Card.Meta>
@@ -16,7 +18,8 @@ const EventCard = () => (
         </Card>
 
         <Card>
-            <Image src='/images/avatar/large/daniel.jpg' wrapped ui={false} />
+            <Image src={require('../images/eventImages/ols.jpg')}
+                wrapped ui={false} />
             <Card.Content>
                 <Card.Header>Event 2</Card.Header>
                 <Card.Meta>26TH JULY</Card.Meta>
@@ -27,7 +30,8 @@ const EventCard = () => (
         </Card>
 
         <Card>
-            <Image src='/images/avatar/large/daniel.jpg' wrapped ui={false} />
+        <Image src={require('../images/eventImages/etana.jpg')}
+            wrapped ui={false} />
             <Card.Content>
                 <Card.Header>Event 3</Card.Header>
                 <Card.Meta>26TH JULY</Card.Meta>
@@ -38,7 +42,8 @@ const EventCard = () => (
         </Card>
 
         <Card>
-            <Image src='/images/avatar/large/daniel.jpg' wrapped ui={false} />
+        <Image src={require('../images/eventImages/mkms.jpg')}
+            wrapped ui={false} />
             <Card.Content>
                 <Card.Header>Event 4</Card.Header>
                 <Card.Meta>26TH JULY</Card.Meta>
