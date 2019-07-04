@@ -8,7 +8,7 @@ const EventCard = () => (
             <Image src='/images/avatar/large/daniel.jpg' wrapped ui={false} />
             <Card.Content>
                 <Card.Header>Event 1</Card.Header>
-                <Card.Meta>26TH JULY</Card.Meta>
+                <Card.Meta><b><code>26TH JULY</code></b></Card.Meta>
                 <Card.Description>
                     Event Description
                 </Card.Description>
