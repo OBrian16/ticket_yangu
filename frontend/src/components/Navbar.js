@@ -18,34 +18,35 @@ class Navbar extends Component {
         return (
             <Menu size='small' fixed=''>
 
-                <Menu.Menu size='tiny'>
+                <Menu.Menu>
                     <Image size='small' position='center'>
                         <Logo />
                     </Image>
                 </Menu.Menu>
 
-                <Menu icon='labeled'>
-                    <Menu.Item as={Link} name='home' to='/'
-                        activeItem={activeItem === 'home'}
-                        onClick={this.handleItemClick}>
-                        <Icon name='home' />
+                <Menu secondary>
+                    <Menu.Item
+                        as={Link} name='HOME' to='/'
+                        active={activeItem === 'home'}
+                        onClick={this.handleItemClick} >
+                        <Icon name='home' size='big' />
                     </Menu.Item>
+
+                    <Menu.Item
+                        as={Link} name='EVENTS' to='Events'
+                        active={activeItem === 'events'}
+                        onClick={this.handleItemClick} />
+
+                    <Menu.Item
+                        as={Link} name='BLOGS' to='/'
+                        active={activeItem === 'blogs'}
+                        onClick={this.handleItemClick} />
+
+                    <Menu.Item
+                        as={Link} name='CONTACT' to='/'
+                        active={activeItem === 'contact'}
+                        onClick={this.handleItemClick} />
                 </Menu>
-
-                <Menu.Item as={Link} name='events' to='Events'
-                    activeItem={activeItem === 'events'}
-                    onClick={this.handleItemClick}
-                />
-
-                <Menu.Item as={Link} name='blog' to='#'
-                    activeItem={activeItem === 'blog'}
-                    onClick={this.handleItemClick}
-                />
-
-                <Menu.Item as={Link} name='contact' to='#'
-                    activeItem={activeItem === 'contact'}
-                    onClick={this.handleItemClick}
-                />
 
                 <Menu.Menu position='right'>
 
@@ -75,7 +76,5 @@ class Navbar extends Component {
         )
     }
 }
-
-
 
 export default Navbar;
