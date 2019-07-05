@@ -5,6 +5,7 @@ import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Resp
 import Footer from '../pages/footer'
 import CarouselPage from '../carousel/image'
 import EventCard from '../pages/cards'
+import EventCategory from '../pages/categories'
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -95,8 +96,8 @@ const HomepageLayout = () => (
             </Header>
         </Segment>
 
-        <Segment style={{ padding: '8em 0em' }} vertical secondary>
-
+        <Segment style={{ padding: '3em 20em' }} vertical secondary>
+            <EventCategory />
         </Segment>
 
         <Segment inverted vertical style={{ padding: '0em 0em' }}>
