@@ -24,12 +24,12 @@ class DesktopContainer extends Component {
         const { fixed } = this.state
 
         return (
-            
+
             <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
                 <Segment
                     secondary
                     textAlign='center'
-                    style={{ minHeight: 300, padding: '2em 0em' }}
+                    style={{ minHeight: 300, padding: '0em 0em' }}
                     vertical
                 >
                     <CarouselPage />
@@ -83,7 +83,19 @@ const HomepageLayout = () => (
             <EventCard />
         </Segment>
 
-        <Segment style={{ padding: '8em 0em' }} vertical>
+        <Segment
+            textAlign='center'
+            style={{ padding: '1em' }}
+            vertical>
+            <Header as='h2' textAlign=''>
+                What are you looking for?
+                    <Header.Subheader>
+                    Choose the Event type in the category below
+                    </Header.Subheader>
+            </Header>
+        </Segment>
+
+        <Segment style={{ padding: '8em 0em' }} vertical secondary>
 
         </Segment>
 
