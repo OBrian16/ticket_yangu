@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Responsive, Segment, Sidebar, Visibility } from 'semantic-ui-react'
+import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Responsive, Segment, Sidebar, Visibility, Form } from 'semantic-ui-react'
 
 import Footer from '../pages/footer'
 import CarouselPage from '../carousel/image'
 import EventCard from '../pages/cards'
 import EventCategory from '../pages/categories'
+import Reasons from '../pages/reasons'
 
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
@@ -98,6 +99,22 @@ const HomepageLayout = () => (
 
         <Segment style={{ padding: '3em 20em' }} vertical secondary>
             <EventCategory />
+        </Segment>
+
+        <Segment
+            textAlign='center'
+            style={{ padding: '1em' }}
+            vertical>
+            <Header as='h2' textAlign=''>
+                Why use ticketyangu?
+                    <Header.Subheader>
+                    Below are the reasons to consider ticketyangu
+                    </Header.Subheader>
+            </Header>
+        </Segment>
+
+        <Segment style={{ padding: '3em 30em' }} vertical secondary>
+            <Reasons />
         </Segment>
 
         <Segment inverted vertical style={{ padding: '0em 0em' }}>
