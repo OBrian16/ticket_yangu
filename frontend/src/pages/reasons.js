@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Icon, Divider, Segment, Grid, Form, Button } from 'semantic-ui-react'
+import { Header, Icon, Divider, Segment, Grid, Form, Button, Flag } from 'semantic-ui-react'
 
 const Reasons = () => (
     <Segment vertical secondary placeholder>
@@ -60,7 +60,11 @@ const Reasons = () => (
                     <Header.Content>
                         Sell tickets in your currency
                     <Header.Subheader>
-                            Manage your preferences
+                            Manage your preferences 
+                            <Flag name='ke' />
+                            <Flag name='tz' />
+                            <Flag name='ug' />
+
                     </Header.Subheader>
                     </Header.Content>
 
