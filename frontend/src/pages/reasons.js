@@ -5,7 +5,7 @@ const Reasons = () => (
     <Segment vertical secondary placeholder>
         <Grid columns={2} relaxed='very' stackable>
             <Grid.Column>
-                <Header as='h2' textAlign='left'>
+                <Header as='h2' textAlign='left' color=''>
                     <Icon name='ticket' color='red'/>
                     <Header.Content >
                         No rip-off booking fees!
@@ -37,7 +37,7 @@ const Reasons = () => (
             </Grid.Column>
 
             <Grid.Column verticalAlign='middle'>
-                <Header as='h2' textAlign='left'>
+                <Header as='h2' textAlign='left' color=''>
                     <Icon name='money' color='red'/>
                     <Header.Content>
                         You take the money directly
@@ -51,7 +51,7 @@ const Reasons = () => (
                     <Header.Content>
                         You're in control
                     <Header.Subheader>
-                            Instantly set up new events, view your sales and download ticket lists
+                            Set new events, view your sales and download ticket lists
                     </Header.Subheader>
                     </Header.Content>
                     <p></p>
