@@ -1,75 +1,95 @@
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Container, Divider, Grid, Header, Image } from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
+import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Responsive, Segment, Sidebar, Visibility, Form } from 'semantic-ui-react'
+
+import Footer from '../pages/footer'
+import EventCard from '../pages/cards'
 
 
+// Heads up!
+// We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
+// For more advanced usage please check Responsive docs under the "Usage" section.
+const getWidth = () => {
+    const isSSR = typeof window === 'undefined'
 
-class Events extends Component {
+    return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
+}
+
+
+class Event extends Component {
+    state = {}
+
     render() {
+        const { children } = this.props
+        const { fixed } = this.state
+
         return (
-            <Container>
-                <style>{`
-              html, body {
-                background-color: #F2F3F4 !important;
-              }
-              p {
-                align-content: center;
-                background-color: #BFC9CA;
-                color: #fff;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                min-height: 18em;
-              }
-              p > span {
-                opacity: 0.4;
-                text-align: center;
-              }
-              }
-            `}
-                </style>
 
-                <Header as='h2' inverted textAlign='center'>
-                    Celled
-                </Header>
+            <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+                <Segment
+                    textAlign='center'
+                    style={{ padding: '1em' }}
+                    vertical>
+                    <Header as='h2' textAlign=''>
+                        Why use ticketyangu?
+                    <Header.Subheader>
+                            Below are the reasons to consider ticketyangu
+                    </Header.Subheader>
+                    </Header>
+                </Segment>
 
-                <Grid columns={4}>
-                    <Grid.Row>
-                        <Grid.Column>
-                            <Image as={Link} name='events' to='Events'
-                                bordered rounded size='huge'
-                                src='/images/white-image.png'
-                            />
+                <Segment
+                    secondary
+                    textAlign='center'
+                    style={{ minHeight: 300, padding: '0em 0em' }}
+                    vertical
+                >
 
-                        </Grid.Column>
-                        <Grid.Column>
-                            <p />
-                        </Grid.Column>
-                        <Grid.Column>
-                            <p />
-                        </Grid.Column>
-                        <Grid.Column>
-                            <p />
-                        </Grid.Column>
-                    </Grid.Row>
-                    <Grid.Row>
-                        <Grid.Column>
-                            <p />
-                        </Grid.Column>
-                        <Grid.Column>
-                            <p />
-                        </Grid.Column>
-                        <Grid.Column>
-                            <p />
-                        </Grid.Column>
-                        <Grid.Column>
-                            <p />
-                        </Grid.Column>
-                    </Grid.Row>
-                </Grid>
-            </Container>
-        );
+                    <EventCard />
+                    <EventCard />
+                    <EventCard />
+
+                </Segment>
+
+                {children}
+            </Responsive>
+        )
     }
 }
 
-export default Events
+Event.propTypes = {
+    children: PropTypes.node,
+}
+
+
+const ResponsiveContainer = ({ children }) => (
+    <div>
+        <Event>{children}</Event>
+    </div>
+)
+
+ResponsiveContainer.propTypes = {
+    children: PropTypes.node,
+}
+
+const HomepageLayout = () => (
+    <ResponsiveContainer>
+
+        <Segment
+            textAlign='center'
+            style={{ padding: '1em' }}
+            vertical>
+            <Header as='h2' textAlign=''>
+                Why use ticketyangu?
+                    <Header.Subheader>
+                    Below are the reasons to consider ticketyangu
+                    </Header.Subheader>
+            </Header>
+        </Segment>
+
+        <Segment inverted vertical style={{ padding: '0em 0em' }}>
+            <Footer />
+        </Segment>
+    </ResponsiveContainer>
+)
+export default HomepageLayout
