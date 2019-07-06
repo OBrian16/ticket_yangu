@@ -17,7 +17,7 @@ const Footer = () => (
     <div>
         <Segment inverted vertical style={{ minWidth: 700, padding: '5em 0em' }}>
             <Container >
-                <Grid divided inverted stackable textAlign='left'>
+                <Grid stackable textAlign='left'>
                     <Grid.Column width={3}>
                         <Header inverted as='h4' content='Services' />
                         <List link inverted>
@@ -57,8 +57,8 @@ const Footer = () => (
                     </Grid.Column>
                 </Grid>
 
-                <Divider textAlign='center' inverted section />
-                Copyright © Ticketyangu 2019
+                <Divider />
+                Copyright © Ticketyangu 2019 // All rights reserved
             </Container>
         </Segment>
     </div>
