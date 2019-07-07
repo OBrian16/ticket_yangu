@@ -3,7 +3,8 @@ import React, { Component } from 'react'
 import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Responsive, Segment, Sidebar, Visibility, Form } from 'semantic-ui-react'
 
 import Footer from '../pages/footer'
-import EventCard from '../pages/cards'
+import Events from '../pages/events'
+import SearchExampleStandard from '../pages/search'
 
 
 // Heads up!
@@ -16,7 +17,7 @@ const getWidth = () => {
 }
 
 
-class Event extends Component {
+class DesktopContainer extends Component {
     state = {}
 
     render() {
@@ -27,27 +28,20 @@ class Event extends Component {
 
             <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
                 <Segment
-                    textAlign='center'
+                    textAlign='right'
                     style={{ padding: '1em' }}
                     vertical>
-                    <Header as='h2' textAlign=''>
-                        Why use ticketyangu?
-                    <Header.Subheader>
-                            Below are the reasons to consider ticketyangu
-                    </Header.Subheader>
-                    </Header>
+                    <SearchExampleStandard />
                 </Segment>
 
                 <Segment
                     secondary
-                    textAlign='center'
+                    textAlign='left'
                     style={{ minHeight: 300, padding: '0em 0em' }}
                     vertical
                 >
 
-                    <EventCard />
-                    <EventCard />
-                    <EventCard />
+                    <Events />
 
                 </Segment>
 
@@ -57,14 +51,14 @@ class Event extends Component {
     }
 }
 
-Event.propTypes = {
+DesktopContainer.propTypes = {
     children: PropTypes.node,
 }
 
 
 const ResponsiveContainer = ({ children }) => (
     <div>
-        <Event>{children}</Event>
+        <DesktopContainer>{children}</DesktopContainer>
     </div>
 )
 
