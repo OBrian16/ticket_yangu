@@ -18,25 +18,38 @@ class Contacts extends Component {
 
                     <List textAlign='left'>
                         <List.Item>
-                            <List.Icon name='users' />
-                            <List.Content>Semantic UI</List.Content>
-                        </List.Item>
-                        <List.Item>
-                            <List.Icon name='marker' />
-                            <List.Content>New York, NY</List.Content>
-                        </List.Item>
-                        <List.Item>
-                            <List.Icon name='mail' />
-                            <List.Content>
-                                <a href='mailto:jack@semantic-ui.com'>jack@semantic-ui.com</a>
+                            <List.Icon name='building' color='blue' />
+                            <List.Content>I&M Buliding, Kenyatta Avenue
+                                <p></p> P.O Box 123-00100
                             </List.Content>
                         </List.Item>
+
                         <List.Item>
-                            <List.Icon name='linkify' />
+                            <List.Icon name='' color='blue' />
+                            <List.Content>Nairobi, Kenya</List.Content>
+                        </List.Item>
+
+                        <List.Item>
+                            <List.Icon name='phone' color='blue' />
                             <List.Content>
-                                <a href='http://www.semantic-ui.com'>semantic-ui.com</a>
+                                +254726618252
                             </List.Content>
                         </List.Item>
+
+                        <List.Item>
+                            <List.Icon name='mail' color='blue' />
+                            <List.Content>
+                                <a href='mailto:communication@ticketyangu.co.ke'>communication@ticketyangu.co.ke</a>
+                            </List.Content>
+                        </List.Item>
+
+                        <List.Item>
+                            <List.Icon name='address card outline' color='blue' />
+                            <List.Content>
+                                <a href='http://www.ticketyangu.com'>www.ticketyangu.com</a>
+                            </List.Content>
+                        </List.Item>
+
                     </List>
                 </Segment>
 
