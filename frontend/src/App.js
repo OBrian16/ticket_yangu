@@ -8,6 +8,9 @@ import Register from './components/Register';
 import Login from './components/Login';
 import Home from './components/Home'
 import Events from './components/Events'
+import ViewEvent from './pages/viewEvent'
+import Contacts from './components/Contacts'
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -24,6 +27,8 @@ class App extends Component {
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/events" component={Events} />
+              <Route exact path="/contacts" component={Contacts} />
+              <Route exact path="/viewEvent" component={ViewEvent} />
             </div>
           </div>
         </Router>
