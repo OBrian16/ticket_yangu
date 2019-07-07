@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Divider, Grid, Header, Image, List, Segment } from 'semantic-ui-react'
+import { Container, Divider, Grid, Header, Image, List, Segment, Icon } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 import Footer from '../pages/footer'
 
@@ -10,12 +10,17 @@ class Contacts extends Component {
                 <style>{`
               html, body {
                 background-color: #F2F3F4 !important;
-                min-height: 118em;
+                min-height: 8em;
               }
             `}
                 </style>
                 <Segment style={{ padding: '3em 30em' }} raised>
-
+                    <Header as='h3' textAlign='left' color=''>
+                        <Header.Content >
+                            SUPPORT
+                        </Header.Content>
+                    </Header>
+                    <Divider></Divider>
                     <List textAlign='left'>
                         <List.Item>
                             <List.Icon name='building' color='blue' />
@@ -53,7 +58,7 @@ class Contacts extends Component {
                     </List>
                 </Segment>
 
-                <Segment style={{ padding: '0em 0em' }} vertical secondary>
+                <Segment style={{ padding: '0em 0em' }}>
                     <Footer />
                 </Segment>
 
