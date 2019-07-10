@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { loginUser } from '../actions/authentification';
-
+import { loginUser } from '../actions/authentication';
+import classnames from 'classnames';
 
 class Login extends Component {
 
@@ -14,8 +13,8 @@ class Login extends Component {
             password: '',
             errors: {}
         }
-        this.handleInputChange = this.handleInputChange.bind(this)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     handleInputChange(e) {
@@ -35,7 +34,7 @@ class Login extends Component {
 
     componentWillReceiveProps(nextProps) {
 
-        if (nextProps.errors) {
+        if(nextProps.errors) {
             this.setState({
                 errors: nextProps.errors
             });
@@ -43,50 +42,44 @@ class Login extends Component {
     }
 
     render() {
-        return (
-            <div className="container"
-                style={{ marginTop: '50px', width: '700px' }}>
-                <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
-                    <Grid.Column style={{ maxWidth: 450 }}>
-
-                        <Header as='h2' color='teal' textAlign='center'>
-                            <Image src='/logo.png' /> Log-in to your account
-                        </Header>
-
-                        <Form onSubmit={this.handleSubmit} size='large' >
-                            <Segment stacked>
-                                <Form.Input
-                                    icon='at'
-                                    iconPosition='left'
-                                    type="email"
-                                    placeholder="Email"
-                                    name="email"
-                                    onChange={this.handleInputChange}
-                                    value={this.state.email}
-                                />
-                                <Form.Input
-                                    fluid
-                                    icon='lock'
-                                    iconPosition='left'
-                                    type="password"
-                                    placeholder="Password"
-                                    name="password"
-                                    onChange={this.handleInputChange}
-                                    value={this.state.password}
-                                />
-                                <Button color='teal' fluid size='large'>
-                                    Login
-                                </Button>
-                            </Segment>
-                        </Form>
-
-                        <Message>
-                            New to us? <a href=''>Sign Up</a>
-                        </Message>
-
-                    </Grid.Column>
-                </Grid>
-            </div>
+        const {errors} = this.state;
+        return(
+        <div className="container" style={{ marginTop: '50px', width: '700px'}}>
+            <h2 style={{marginBottom: '40px'}}>Login</h2>
+            <form onSubmit={ this.handleSubmit }>
+                <div className="form-group">
+                    <input
+                    type="email"
+                    placeholder="Email"
+                    className={classnames('form-control form-control-lg', {
+                        'is-invalid': errors.email
+                    })}
+                    name="email"
+                    onChange={ this.handleInputChange }
+                    value={ this.state.email }
+                    />
+                    {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
+                </div>
+                <div className="form-group">
+                    <input
+                    type="password"
+                    placeholder="Password"
+                    className={classnames('form-control form-control-lg', {
+                        'is-invalid': errors.password
+                    })} 
+                    name="password"
+                    onChange={ this.handleInputChange }
+                    value={ this.state.password }
+                    />
+                    {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
+                </div>
+                <div className="form-group">
+                    <button type="submit" className="btn btn-primary">
+                        Login User
+                    </button>
+                </div>
+            </form>
+        </div>
         )
     }
 }

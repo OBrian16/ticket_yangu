@@ -14,7 +14,7 @@ class Contacts extends Component {
               }
             `}
                 </style>
-                <Segment style={{ padding: '3em 30em' }} raised>
+                <Segment style={{ padding: '3em 30em' }} raised >
                     <Header as='h3' textAlign='left' color=''>
                         <Header.Content >
                             SUPPORT
@@ -58,11 +58,14 @@ class Contacts extends Component {
                     </List>
                 </Segment>
 
-                <Segment style={{ padding: '0em 0em' }}>
+                <Segment
+                    inverted
+                    textAlign='center'
+                    style={{ minHeight: 600, padding: '6em 60em' }}  >                  
                     <Footer />
                 </Segment>
 
-            </Container>
+            </Container >
         );
     }
 }
