@@ -19,7 +19,7 @@ class Navbar extends Component {
             <Menu size='small' fixed=''>
 
                 <Menu.Menu>
-                    <Image size='small' position='center'>
+                    <Image size='tiny' position='center'>
                         <Logo />
                     </Image>
                 </Menu.Menu>
