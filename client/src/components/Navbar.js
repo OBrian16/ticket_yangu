@@ -51,17 +51,35 @@ class Navbar extends Component {
                 <Menu.Menu position='right'>
 
                     <Menu.Item>
-                        <Button as={Link} name='login' to='Login' color='red' >
-                            <Icon name='lock' />
-                            Login
-                            </Button>
+                        <div className="col s6">
+                            <Link
+                                to="/login"
+                                style={{
+                                    width: "140px",
+                                    borderRadius: "3px",
+                                    letterSpacing: "1.5px"
+                                }}
+                                className="btn btn-large btn-flat waves-effect white black-text"
+                            >
+                                Log In
+                            </Link>
+                        </div>
                     </Menu.Item>
 
                     <Menu.Item>
-                        <Button as={Link} name='register' to='Register' color='blue' >
-                            <Icon name='user' />
-                            Register
-                            </Button>
+                        <div className="col s6">
+                            <Link
+                                to="/register"
+                                style={{
+                                    width: "140px",
+                                    borderRadius: "3px",
+                                    letterSpacing: "1.5px"
+                                }}
+                                className="btn btn-large waves-effect waves-light hoverable blue accent-3"
+                            >
+                                Register
+                            </Link>
+                        </div>
                     </Menu.Item>
 
                     <Menu.Item>
