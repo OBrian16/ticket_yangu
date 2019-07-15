@@ -6,7 +6,7 @@ import { Card, Icon, Image, CardGroup, Button, Divider, Segment } from 'semantic
 const EventCategory = () => (
     <Card.Group itemsPerRow={7}>
 
-        <Card color='grey' link>
+        <Card color='' link>
             <Image src={require('../images/eventCategory/festival.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -14,7 +14,7 @@ const EventCategory = () => (
             </Card.Content>
         </Card>
 
-        <Card color='grey' link>
+        <Card color='' link>
             <Image src={require('../images/eventImages/ols.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -22,7 +22,7 @@ const EventCategory = () => (
             </Card.Content>
         </Card>
 
-        <Card color='grey' link>
+        <Card color='' link>
             <Image src={require('../images/eventImages/etana.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -30,7 +30,7 @@ const EventCategory = () => (
             </Card.Content>
         </Card>
 
-        <Card color='grey' link>
+        <Card color='' link>
             <Image src={require('../images/eventImages/mkms.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -38,7 +38,7 @@ const EventCategory = () => (
             </Card.Content>
         </Card>
 
-        <Card color='grey' link>
+        <Card color='' link>
             <Image src={require('../images/eventImages/dfd.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -46,7 +46,7 @@ const EventCategory = () => (
             </Card.Content>
         </Card>
 
-        <Card color='grey' link>
+        <Card color='' link>
             <Image src={require('../images/eventCategory/festival.jpg')}
                 wrapped ui={false} />
             <Card.Content>
@@ -54,7 +54,7 @@ const EventCategory = () => (
             </Card.Content>
         </Card>
 
-        <Card color='grey' link>
+        <Card color='' link>
             <Image src={require('../images/eventImages/etana.jpg')}
                 wrapped ui={false} />
             <Card.Content>
