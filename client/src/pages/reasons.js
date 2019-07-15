@@ -6,7 +6,7 @@ const Reasons = () => (
         <Grid columns={2} relaxed='very' stackable>
             <Grid.Column>
                 <Header as='h2' textAlign='left' color=''>
-                    <Icon name='ticket' color='red'/>
+                    <Icon name='ticket' color=''/>
                     <Header.Content >
                         No rip-off booking fees!
                     <Header.Subheader>
@@ -15,7 +15,7 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='users' color='red' />
+                    <Icon name='users' color='' />
                     <Header.Content>
                         Suitable for any size event
                     <Header.Subheader>
@@ -24,7 +24,7 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='wizard' color='red' />
+                    <Icon name='wizard' color='' />
                     <Header.Content>
                         Easy to Use
                     <Header.Subheader>
@@ -38,7 +38,7 @@ const Reasons = () => (
 
             <Grid.Column verticalAlign='middle'>
                 <Header as='h2' textAlign='left' color=''>
-                    <Icon name='money' color='red'/>
+                    <Icon name='money' color=''/>
                     <Header.Content>
                         You take the money directly
                     <Header.Subheader>
@@ -47,7 +47,7 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='thumbs up' color='red'/>
+                    <Icon name='thumbs up' color=''/>
                     <Header.Content>
                         You're in control
                     <Header.Subheader>
@@ -56,7 +56,7 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='dollar' color='red'/>
+                    <Icon name='dollar' color=''/>
                     <Header.Content>
                         Sell tickets in your currency
                     <Header.Subheader>
