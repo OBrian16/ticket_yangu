@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import { Button } from 'semantic-ui-react'
+import { Link } from "react-router-dom";
+
 
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -20,17 +22,22 @@ class Dashboard extends Component {
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
+                You are logged into {" "}
+                <span style={{ fontFamily: "monospace" }}>ticketyangu</span> website
               </p>
             </h4>
 
 
-            <Button color='blue' size='large' type='submit' floated='center  '
+            <Button color='blue' size='large' type='submit' floated='left  '
               onClick={this.onLogoutClick}
             >
               Logout
             </Button>
+
+            <Link to="/" className="btn-flat waves-effect">
+              <i className="material-icons left">keyboard_backspace</i> Go to
+              home
+            </Link>
 
           </div>
         </div>
