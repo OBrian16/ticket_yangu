@@ -143,8 +143,8 @@ class Register extends Component {
             Already have an account? <Link to="/login">Log in</Link>
           </Message>
 
-        </Grid.Column>
-      </Grid>
+          </Grid.Column>
+        </Grid>
     );
   }
 }
