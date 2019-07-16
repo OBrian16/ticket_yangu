@@ -30,7 +30,7 @@ class DesktopContainer extends Component {
                 <Segment
                     secondary
                     textAlign='center'
-                    style={{ minHeight: 300, padding: '3em 0em' }}
+                    style={{ minHeight: 300, padding: '0em 0em' }}
                     vertical
                 >
                     <CarouselPage />

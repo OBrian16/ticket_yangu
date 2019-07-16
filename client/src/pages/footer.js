@@ -11,7 +11,7 @@ import SocialLink from './social'
 
 const Footer = () => (
     <div>
-        <Segment inverted vertical style={{ minWidth: 100, padding: '9em 0em' }}>
+        <Segment inverted vertical style={{ minWidth: 100, padding: '3em 0em' }}>
             <Container >
                 <Grid stackable textAlign='left'>
                     <Grid.Column width={3}>

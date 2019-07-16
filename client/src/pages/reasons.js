@@ -6,7 +6,7 @@ const Reasons = () => (
         <Grid columns={2} relaxed='very' stackable>
             <Grid.Column>
                 <Header as='h2' textAlign='left' color=''>
-                    <Icon name='ticket' color=''/>
+                    <Icon name='ticket' color='red' />
                     <Header.Content >
                         No rip-off booking fees!
                     <Header.Subheader>
@@ -15,7 +15,7 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='users' color='' />
+                    <Icon name='users' color='red' />
                     <Header.Content>
                         Suitable for any size event
                     <Header.Subheader>
@@ -24,7 +24,7 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='wizard' color='' />
+                    <Icon name='wizard' color='red' />
                     <Header.Content>
                         Easy to Use
                     <Header.Subheader>
@@ -38,7 +38,7 @@ const Reasons = () => (
 
             <Grid.Column verticalAlign='middle'>
                 <Header as='h2' textAlign='left' color=''>
-                    <Icon name='money' color=''/>
+                    <Icon name='money' color='red' />
                     <Header.Content>
                         You take the money directly
                     <Header.Subheader>
@@ -47,7 +47,7 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='thumbs up' color=''/>
+                    <Icon name='thumbs up' color='red' />
                     <Header.Content>
                         You're in control
                     <Header.Subheader>
@@ -56,16 +56,16 @@ const Reasons = () => (
                     </Header.Content>
                     <p></p>
 
-                    <Icon name='dollar' color=''/>
+                    <Icon name='dollar' color='red' />
                     <Header.Content>
                         Sell tickets in your currency
                     <Header.Subheader>
-                            Manage your preferences 
+                            Manage your preferences
                             <Flag name='ke' />
                             <Flag name='tz' />
                             <Flag name='ug' />
 
-                    </Header.Subheader>
+                        </Header.Subheader>
                     </Header.Content>
 
                 </Header>
