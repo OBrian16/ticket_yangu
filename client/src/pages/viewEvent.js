@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Header, Responsive, Segment, Item, Label, Button, Image, Divider } from 'semantic-ui-react'
+import { Header, Responsive, Segment, Item, Label, Button, Image, Divider, Form } from 'semantic-ui-react'
 
 import Footer from '../pages/footer'
 
@@ -18,10 +18,19 @@ const getWidth = () => {
 
 
 class DesktopContainer extends Component {
-    state = {}
+    state = { name: '', email: '', submittedName: '', submittedEmail: '' }
 
+    handleChange = (e, { name, value }) => this.setState({ [name]: value })
+
+    handleSubmit = () => {
+        const { name, email } = this.state
+
+        this.setState({ submittedName: name, submittedEmail: email })
+    }
     render() {
         const { children } = this.props
+        const { name, email, submittedName, submittedEmail } = this.state
+
 
         return (
 
@@ -33,7 +42,7 @@ class DesktopContainer extends Component {
                     style={{ minHeight: 300, padding: '4em 30em' }}
                     vertical
                 >
-                    <Segment  >
+                    <Segment attached='top'>
                         <Header as='h2' textAlign=''>
                             Design For Designers
                         </Header>
@@ -60,9 +69,6 @@ class DesktopContainer extends Component {
                                     <Item.Extra>
                                         <Label>JKUAT</Label>
                                         <Label icon='globe' content='Additional Languages' />
-                                        <Button size='' primary floated='right'>
-                                            Buy tickets
-                                        </Button>
                                     </Item.Extra>
 
                                     <Divider />
@@ -84,6 +90,45 @@ class DesktopContainer extends Component {
                             </Item>
 
                         </Item.Group>
+                    </Segment >
+
+                    <Segment attached='bottom'
+                        textAlign='center'
+                        tertiary>
+                        <Header as='h2' textAlign=''>
+                            Get your ticket now
+                            <Header.Subheader>
+                                Indicate how many tickets you wish to purchase
+                            </Header.Subheader>
+                        </Header>
+
+                    </Segment>
+
+                    <Segment attached='bottom'
+                        textAlign='center'
+                        tertiary>
+                        <Header as='h4' textAlign=''>
+                            Enter your details
+                        </Header>
+
+                        <Form>
+                            <Form.Input
+                                placeholder='Name'
+                                name='name'
+                                value={name}
+                                onChange={this.handleChange} width={6} />
+                            <Form.Input
+                                placeholder='Email'
+                                name='email'
+                                value={email}
+                                onChange={this.handleChange} width={6} />
+                            <Form.Input
+                                placeholder='Phone'
+                                width={6} />
+                        </Form>
+
+                        <Form.Button content='Make Payment' color='blue' />
+
                     </Segment>
 
                 </Segment>
@@ -111,18 +156,6 @@ ResponsiveContainer.propTypes = {
 
 const HomepageLayout = () => (
     <ResponsiveContainer>
-
-        <Segment
-            textAlign='center'
-            style={{ padding: '1em' }}
-            vertical>
-            <Header as='h2' textAlign=''>
-                Why use ticketyangu?
-                    <Header.Subheader>
-                    Below are the reasons to consider ticketyangu
-                    </Header.Subheader>
-            </Header>
-        </Segment>
 
         <Segment inverted vertical style={{ padding: '0em 0em' }}>
             <Footer />
