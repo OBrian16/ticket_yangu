@@ -59,13 +59,13 @@ class Login extends Component {
 
           <Header as='h2' color='blue' textAlign='center'>
             <Image src='/logo.png' /> Log-in to your account
-                </Header>
+          </Header>
 
           <Form size='large' noValidate onSubmit={this.onSubmit}>
             <Segment stacked >
               <Form.Input
                 fluid
-                icon='user'
+                icon='at'
                 iconPosition='left'
                 placeholder='E-mail address'
                 onChange={this.onChange}
