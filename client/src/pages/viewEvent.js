@@ -69,9 +69,6 @@ class DesktopContainer extends Component {
                                     <Item.Extra>
                                         <Label>JKUAT</Label>
                                         <Label icon='globe' content='Additional Languages' />
-                                        <Button size='' primary floated='right'>
-                                            Buy tickets
-                                        </Button>
                                     </Item.Extra>
 
                                     <Divider />
@@ -129,6 +126,8 @@ class DesktopContainer extends Component {
                                 placeholder='Phone'
                                 width={6} />
                         </Form>
+
+                        <Form.Button content='Make Payment' color='blue' />
 
                     </Segment>
 
