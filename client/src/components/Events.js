@@ -28,7 +28,7 @@ class DesktopContainer extends Component {
             <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
                 <Segment
                     textAlign='right'
-                    style={{ padding: '1em' }}
+                    style={{ padding: '1em 30em' }}
                     vertical>
                     <SearchExampleStandard />
                 </Segment>
@@ -36,7 +36,7 @@ class DesktopContainer extends Component {
                 <Segment
                     secondary
                     textAlign='left'
-                    style={{ minHeight: 300, padding: '0em 0em' }}
+                    style={{ minHeight: 300, padding: '2em 30em' }}
                     vertical
                 >
 
