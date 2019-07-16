@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Divider, Grid, Header, Image, List, Segment, Icon } from 'semantic-ui-react'
-import { Link } from 'react-router-dom';
+import { Container, Divider, Header, List, Segment } from 'semantic-ui-react'
 import Footer from '../pages/footer'
 
 class Contacts extends Component {

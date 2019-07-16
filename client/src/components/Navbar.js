@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Responsive, Segment, Sidebar, Visibility } from 'semantic-ui-react'
+import { Button, Icon, Image, Menu } from 'semantic-ui-react'
 import Logo from './Header'
 
 class Navbar extends Component {

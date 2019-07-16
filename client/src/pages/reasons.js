@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Icon, Divider, Segment, Grid, Form, Button, Flag } from 'semantic-ui-react'
+import { Header, Icon, Segment, Grid, Flag } from 'semantic-ui-react'
 
 const Reasons = () => (
     <Segment vertical secondary placeholder>

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Button, Container, Divider, Grid, Header, Icon, Image, List, Menu, Responsive, Segment, Sidebar, Visibility, Form } from 'semantic-ui-react'
+import { Button,  Grid, Header, Responsive, Segment } from 'semantic-ui-react'
 
 import Footer from '../pages/footer'
 import CarouselPage from '../carousel/image'
@@ -23,7 +23,6 @@ class DesktopContainer extends Component {
 
     render() {
         const { children } = this.props
-        const { fixed } = this.state
 
         return (
 
