@@ -16,7 +16,7 @@ class Navbar extends Component {
         const { activeItem } = this.state
 
         return (
-            <Menu size='small' fixed=''>
+            <Menu size='small' fixed='top'>
 
                 <Menu.Menu>
                     <Image size='tiny' position='center'>
