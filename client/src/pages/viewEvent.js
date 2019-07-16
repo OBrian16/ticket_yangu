@@ -157,18 +157,6 @@ ResponsiveContainer.propTypes = {
 const HomepageLayout = () => (
     <ResponsiveContainer>
 
-        <Segment
-            textAlign='center'
-            style={{ padding: '1em' }}
-            vertical>
-            <Header as='h2' textAlign=''>
-                Why use ticketyangu?
-                    <Header.Subheader>
-                    Below are the reasons to consider ticketyangu
-                    </Header.Subheader>
-            </Header>
-        </Segment>
-
         <Segment inverted vertical style={{ padding: '0em 0em' }}>
             <Footer />
         </Segment>
