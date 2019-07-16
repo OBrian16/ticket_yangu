@@ -2,14 +2,10 @@ import React from 'react'
 import {
     Container,
     Divider,
-    Dropdown,
     Grid,
     Header,
-    Image,
     List,
-    Menu,
     Segment,
-    Responsive
 } from 'semantic-ui-react'
 import SocialLink from './social'
 

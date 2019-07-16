@@ -56,94 +56,93 @@ class Register extends Component {
 
     return (
       <Grid textAlign='center' style={{ height: '60vh' }} verticalAlign='middle'>
-        <Grid.Column style={{ maxWidth: 950 }}>
-          <div className="container">
-            <div className="row">
-              <div className="col s8 offset-s2">
+        <Grid.Column style={{ maxWidth: 450 }}>
 
-                <Header as='h2' textAlign=''>
-                  Create your account
-                </Header>
+          <Header as='h2' color='blue' textAlign='center'>
+            <Image src='/logo.png' />Create your account
+          </Header>
 
-                <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-                  <p className="grey-text text-darken-1">
-                    Already have an account? <Link to="/login">Log in</Link>
-                  </p>
-                </div>
+          <Form size='large' noValidate onSubmit={this.onSubmit}>
+            <Segment stacked >
+              <Form.Input
+                fluid
+                icon='user'
+                iconPosition='left'
+                placeholder='Name'
+                onChange={this.onChange}
+                value={this.state.name}
+                error={errors.name}
+                id="name"
+                type="text"
+                className={classnames("", {
+                  invalid: errors.name
+                })}
+              />
+              <span className="red-text">{errors.name}</span>
 
-                <form noValidate onSubmit={this.onSubmit}>
-                  <div className="input-field col s12">
-                    <input
-                      onChange={this.onChange}
-                      value={this.state.name}
-                      error={errors.name}
-                      id="name"
-                      type="text"
-                      className={classnames("", {
-                        invalid: errors.name
-                      })}
-                    />
-                    <label htmlFor="name">Name</label>
-                    <span className="red-text">{errors.name}</span>
-                  </div>
-                  <div className="input-field col s12">
-                    <input
-                      onChange={this.onChange}
-                      value={this.state.email}
-                      error={errors.email}
-                      id="email"
-                      type="email"
-                      className={classnames("", {
-                        invalid: errors.email
-                      })}
-                    />
-                    <label htmlFor="email">Email</label>
-                    <span className="red-text">{errors.email}</span>
-                  </div>
-                  <div className="input-field col s12">
-                    <input
-                      onChange={this.onChange}
-                      value={this.state.password}
-                      error={errors.password}
-                      id="password"
-                      type="password"
-                      className={classnames("", {
-                        invalid: errors.password
-                      })}
-                    />
-                    <label htmlFor="password">Password</label>
-                    <span className="red-text">{errors.password}</span>
-                  </div>
-                  <div className="input-field col s12">
-                    <input
-                      onChange={this.onChange}
-                      value={this.state.password2}
-                      error={errors.password2}
-                      id="password2"
-                      type="password"
-                      className={classnames("", {
-                        invalid: errors.password2
-                      })}
-                    />
-                    <label htmlFor="password2">Confirm Password</label>
-                    <span className="red-text">{errors.password2}</span>
-                  </div>
+              <Form.Input
+                fluid
+                icon='at'
+                iconPosition='left'
+                placeholder='E-mail address'
+                onChange={this.onChange}
+                value={this.state.email}
+                error={errors.email}
+                id="email"
+                type="email"
+                className={classnames("", {
+                  invalid: errors.email
+                })}
+              />
+              <span className="red-text">{errors.email}</span>
 
-                  <div className="col s12" style={{ paddingLeft: "11.250px" }}>
-                    <Button color='blue' size='large' type='submit' floated='left  ' >
-                      Register
-                    </Button>
+              <Form.Input
+                fluid
+                icon='lock'
+                iconPosition='left'
+                placeholder='Password'
+                onChange={this.onChange}
+                value={this.state.password}
+                error={errors.password}
+                id="password"
+                type="password"
+                className={classnames("", {
+                  invalid: errors.password
+                })}
+              />
+              <span className="red-text">{errors.password}</span>
 
-                    <Link to="/" className="btn-flat waves-effect">
-                      <i className="material-icons left">keyboard_backspace</i> Back to
-                      home
-                    </Link>
-                  </div>
+              <Form.Input
+                fluid
+                icon='lock'
+                iconPosition='left'
+                placeholder='Password'
+                onChange={this.onChange}
+                value={this.state.password2}
+                error={errors.password2}
+                id="password2"
+                type="password"
+                className={classnames("", {
+                  invalid: errors.password2
+                })}
+              />
+              <span className="red-text">{errors.password2}</span>
 
-                </form>
-              </div>
-            </div>
-          </div>
+              <Button color='blue' fluid size='large' type='submit' floated='left  ' >
+                Register
+              </Button>
+              <p></p>
+              <Link to="/" >
+                Back to home
+              </Link>
+
+            </Segment>
+          </Form>
+
+          <Message>
+            Already have an account? <Link to="/login">Log in</Link>
+          </Message>
+
         </Grid.Column>
       </Grid>
     );

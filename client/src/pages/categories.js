@@ -1,7 +1,5 @@
 import React from 'react'
-import { Card, Icon, Image, CardGroup, Button, Divider, Segment } from 'semantic-ui-react'
-// import { Link } from 'react-router-dom';
-
+import { Card, Image } from 'semantic-ui-react'
 
 const EventCategory = () => (
     <Card.Group itemsPerRow={7}>
