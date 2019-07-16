@@ -84,6 +84,17 @@ class DesktopContainer extends Component {
                             </Item>
 
                         </Item.Group>
+                    </Segment >
+
+                    <Segment
+                        textAlign='center'
+                        tertiary>
+                        <Header as='h2' textAlign=''>
+                            Get your ticket now
+                            <Header.Subheader>
+                                Indicate how many tickets you wish to purchase
+                            </Header.Subheader>
+                        </Header>
                     </Segment>
 
                 </Segment>
