@@ -38,8 +38,8 @@ class Navbar extends Component {
                         onClick={this.handleItemClick} />
 
                     <Menu.Item
-                        as={Link} name='BLOGS' to='ViewEvent'
-                        active={activeItem === 'viewEvent'}
+                        as={Link} name='BLOGS' to='Blogs'
+                        active={activeItem === 'blogs'}
                         onClick={this.handleItemClick} />
 
                     <Menu.Item
