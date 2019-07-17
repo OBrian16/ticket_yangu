@@ -9,11 +9,11 @@ class Contacts extends Component {
                 <style>{`
               html, body {
                 background-color: #F2F3F4 !important;
-                min-height: 8em;
+                min-height: 10em;
               }
             `}
                 </style>
-                <Segment style={{ padding: '3em 30em' }} raised >
+                <Segment style={{ padding: '5em 30em' }} raised >
                     <Header as='h3' textAlign='left' color=''>
                         <Header.Content >
                             SUPPORT
