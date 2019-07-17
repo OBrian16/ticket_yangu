@@ -1,11 +1,13 @@
 import React from 'react'
 import { Card, Image } from 'semantic-ui-react'
+import { Link } from 'react-router-dom';
 
 
 const Events = () => (
     <Card.Group itemsPerRow={4}>
 
-        <Card color='grey' link>
+        <Card color='grey'
+            as={Link} name='EVENTS' to='ViewEvent'>
             <Image src={require('../images/eventImages/dfd.jpg')}
                 wrapped ui={false} />
             <Card.Content>
