@@ -18,7 +18,7 @@ class Dashboard extends Component {
     return (
 
       <Segment
-        style={{ padding: '3em 30em' }} vertical
+        style={{ padding: '7em 30em' }} vertical
         textAlign='center'
       >
         <Header as='h2' textAlign=''>
