@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {
     Container,
     Divider,
@@ -17,10 +18,10 @@ const Footer = () => (
                     <Grid.Column width={3}>
                         <Header inverted as='h4' content='Services' />
                         <List link inverted>
-                            <List.Item as='a'>Events</List.Item>
-                            <List.Item as='a'>Blogs</List.Item>
-                            <List.Item as='a'>Login</List.Item>
-                            <List.Item as='a'>Register</List.Item>
+                            <List.Item as={Link} to='Events'>Events</List.Item>
+                            <List.Item as={Link} to='Blogs'>Blogs</List.Item>
+                            <List.Item as={Link} to='Login'>Login</List.Item>
+                            <List.Item as={Link} to='Register'>Register</List.Item>
                             <List.Item as='a'>Write a review</List.Item>
 
 
@@ -40,7 +41,7 @@ const Footer = () => (
                         <Header inverted as='h4' content='Quicklinks' />
                         <List link inverted>
                             <List.Item as='a'>Pricing</List.Item>
-                            <List.Item as='a'>Support</List.Item>
+                            <List.Item as={Link} to='Contacts'>Support</List.Item>
                             <List.Item as='a'>Private Policy</List.Item>
                             <List.Item as='a'>Terms and Conditions </List.Item>
                         </List>
