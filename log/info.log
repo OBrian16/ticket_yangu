@@ -270,3 +270,141 @@
 2019-07-23 19:25:41 :: [END :: 835f96a0-ad66-11e9-9650-05b531a6e82c]; /event/ticket/read/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
 2019-07-23 19:25:44 :: [START :: 85515480-ad66-11e9-9650-05b531a6e82c]; /event/ticket/read-many/5d36da4edb56391693982878; 200
 2019-07-23 19:25:44 :: [END :: 85515480-ad66-11e9-9650-05b531a6e82c]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 21:06:19 :: Server is listening on port (7000)
+2019-07-23 21:06:24 :: [START :: 951d7ca0-ad74-11e9-890f-4bcb482f08b1]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 21:06:24 :: [END :: 951d7ca0-ad74-11e9-890f-4bcb482f08b1]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 21:06:53 :: [START :: a6d32da0-ad74-11e9-890f-4bcb482f08b1]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 21:06:53 :: [FAILED :: a6d32da0-ad74-11e9-890f-4bcb482f08b1]; /event/ticket/read-many/5d36da4edb56391693982878; 404; Ticket not found.
+2019-07-23 21:08:00 :: Server is listening on port (7000)
+2019-07-23 21:08:03 :: [START :: d02afac0-ad74-11e9-ac85-5383266d0165]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 21:08:03 :: [END :: d02afac0-ad74-11e9-ac85-5383266d0165]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 21:08:21 :: Server is listening on port (7000)
+2019-07-23 21:08:24 :: [START :: dc97d3a0-ad74-11e9-8c27-5f83f1110216]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 21:08:24 :: [END :: dc97d3a0-ad74-11e9-8c27-5f83f1110216]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 21:08:32 :: Server is listening on port (7000)
+2019-07-23 21:08:35 :: [START :: e331bcd0-ad74-11e9-95ce-61e3c632adda]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 21:08:35 :: [END :: e331bcd0-ad74-11e9-95ce-61e3c632adda]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 21:08:49 :: Server is listening on port (7000)
+2019-07-23 21:09:28 :: Server is listening on port (7000)
+2019-07-23 21:09:30 :: [START :: 03ead010-ad75-11e9-9dfd-2be4723e87bf]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 21:09:30 :: [END :: 03ead010-ad75-11e9-9dfd-2be4723e87bf]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 21:09:47 :: Server is listening on port (7000)
+2019-07-23 21:09:50 :: [START :: 0fdd96f0-ad75-11e9-9ea0-ddee5a1efa1f]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 21:09:50 :: [END :: 0fdd96f0-ad75-11e9-9ea0-ddee5a1efa1f]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 22:07:26 :: Server is listening on port (7000)
+2019-07-23 22:07:31 :: [START :: 1f3699a0-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 22:07:31 :: [END :: 1f3699a0-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 22:07:48 :: [START :: 296f7b80-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 22:07:48 :: [END :: 296f7b80-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 22:07:54 :: [START :: 2cde6380-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 22:07:54 :: [END :: 2cde6380-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 22:07:58 :: [START :: 2f1a97e0-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 22:07:58 :: [END :: 2f1a97e0-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 22:08:09 :: [START :: 35907e50-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200
+2019-07-23 22:08:09 :: [END :: 35907e50-ad7d-11e9-9718-b75b578c838a]; /event/ticket/read-many/5d36da4edb56391693982878; 200;
+2019-07-23 22:09:57 :: Server is listening on port (7000)
+2019-07-23 22:15:16 :: Server is listening on port (7000)
+2019-07-23 22:16:27 :: Server is listening on port (7000)
+2019-07-23 22:16:40 :: Server is listening on port (7000)
+2019-07-23 22:17:43 :: [START :: 8bb832e0-ad7e-11e9-9444-331d3716b1c5]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:17:43 :: [END :: 8bb832e0-ad7e-11e9-9444-331d3716b1c5]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:18:46 :: [START :: b1824560-ad7e-11e9-9444-331d3716b1c5]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:18:46 :: [END :: b1824560-ad7e-11e9-9444-331d3716b1c5]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:19:22 :: Server is listening on port (7000)
+2019-07-23 22:19:24 :: [START :: c84ced40-ad7e-11e9-b1b0-8b8d90eb227d]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:19:24 :: [END :: c84ced40-ad7e-11e9-b1b0-8b8d90eb227d]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:19:33 :: Server is listening on port (7000)
+2019-07-23 22:19:35 :: [START :: ce6438f0-ad7e-11e9-923a-09ef534005aa]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:19:35 :: [END :: ce6438f0-ad7e-11e9-923a-09ef534005aa]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:20:34 :: Server is listening on port (7000)
+2019-07-23 22:20:37 :: [START :: f352b880-ad7e-11e9-a15b-419eb7c94b95]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:20:37 :: [END :: f352b880-ad7e-11e9-a15b-419eb7c94b95]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:21:06 :: Server is listening on port (7000)
+2019-07-23 22:21:09 :: [START :: 06d142a0-ad7f-11e9-bb4a-6317bee80360]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:21:09 :: [END :: 06d142a0-ad7f-11e9-bb4a-6317bee80360]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:21:46 :: Server is listening on port (7000)
+2019-07-23 22:21:48 :: [START :: 1de37ad0-ad7f-11e9-b4c0-7fdc6406ba07]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:21:48 :: [END :: 1de37ad0-ad7f-11e9-b4c0-7fdc6406ba07]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:22:26 :: Server is listening on port (7000)
+2019-07-23 22:22:28 :: [START :: 35ce86d0-ad7f-11e9-b905-a145b3022983]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:22:28 :: [END :: 35ce86d0-ad7f-11e9-b905-a145b3022983]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:23:29 :: Server is listening on port (7000)
+2019-07-23 22:23:31 :: [START :: 5b3829d0-ad7f-11e9-8e80-8fc593a95cf5]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:23:31 :: [END :: 5b3829d0-ad7f-11e9-8e80-8fc593a95cf5]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:23:55 :: [START :: 694c7120-ad7f-11e9-8e80-8fc593a95cf5]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:23:55 :: [END :: 694c7120-ad7f-11e9-8e80-8fc593a95cf5]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:24:05 :: Server is listening on port (7000)
+2019-07-23 22:24:07 :: [START :: 70b8ec90-ad7f-11e9-8cd7-f54c96b445cd]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:24:07 :: [END :: 70b8ec90-ad7f-11e9-8cd7-f54c96b445cd]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:24:40 :: Server is listening on port (7000)
+2019-07-23 22:24:43 :: [START :: 85f2e250-ad7f-11e9-a54a-29c98b003dc3]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:24:43 :: [END :: 85f2e250-ad7f-11e9-a54a-29c98b003dc3]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:24:47 :: [START :: 889dde10-ad7f-11e9-a54a-29c98b003dc3]; /event/ticket/search/5d36da4edb56391693982878; 200
+2019-07-23 22:24:47 :: [END :: 889dde10-ad7f-11e9-a54a-29c98b003dc3]; /event/ticket/search/5d36da4edb56391693982878; 200;
+2019-07-23 22:39:43 :: Server is listening on port (7000)
+2019-07-23 22:40:21 :: Server is listening on port (7000)
+2019-07-23 22:41:14 :: Server is listening on port (7000)
+2019-07-23 22:47:12 :: Server is listening on port (7000)
+2019-07-23 22:47:29 :: [START :: b47d8730-ad82-11e9-87bd-b550516966c7]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:47:29 :: [END :: b47d8730-ad82-11e9-87bd-b550516966c7]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:47:51 :: [START :: c19daa80-ad82-11e9-87bd-b550516966c7]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:47:51 :: [END :: c19daa80-ad82-11e9-87bd-b550516966c7]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:48:31 :: Server is listening on port (7000)
+2019-07-23 22:48:33 :: [START :: da81e390-ad82-11e9-a8fe-71fbf6daea62]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:48:33 :: [FATAL :: da81e390-ad82-11e9-a8fe-71fbf6daea62]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:01 :: Server is listening on port (7000)
+2019-07-23 22:49:04 :: [START :: ecbbb8b0-ad82-11e9-a71b-9f70922f0a87]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:49:04 :: [FATAL :: ecbbb8b0-ad82-11e9-a71b-9f70922f0a87]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:21 :: Server is listening on port (7000)
+2019-07-23 22:49:24 :: [START :: f8cc19b0-ad82-11e9-b038-7bdca6d4102f]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:49:24 :: [FATAL :: f8cc19b0-ad82-11e9-b038-7bdca6d4102f]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:31 :: Server is listening on port (7000)
+2019-07-23 22:49:34 :: [START :: fecea4e0-ad82-11e9-b837-6b615bd08590]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:49:34 :: [FATAL :: fecea4e0-ad82-11e9-b837-6b615bd08590]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:53 :: Server is listening on port (7000)
+2019-07-23 22:49:56 :: [START :: 0bfc5cc0-ad83-11e9-b0ef-61114e54858a]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:49:56 :: [FATAL :: 0bfc5cc0-ad83-11e9-b0ef-61114e54858a]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:50:16 :: Server is listening on port (7000)
+2019-07-23 22:50:42 :: [START :: 27a05210-ad83-11e9-aa7b-b1187a2cf29e]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:50:42 :: [FATAL :: 27a05210-ad83-11e9-aa7b-b1187a2cf29e]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:51:11 :: Server is listening on port (7000)
+2019-07-23 22:51:15 :: [START :: 3b2aea20-ad83-11e9-8b5e-e3ac32a709a7]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:51:15 :: [END :: 3b2aea20-ad83-11e9-8b5e-e3ac32a709a7]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:51:24 :: [START :: 40b02f00-ad83-11e9-8b5e-e3ac32a709a7]; /event/ticket/read/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:51:24 :: [END :: 40b02f00-ad83-11e9-8b5e-e3ac32a709a7]; /event/ticket/read/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:56:30 :: Server is listening on port (7000)
+2019-07-23 22:57:49 :: Server is listening on port (7000)
+2019-07-23 22:57:54 :: Server is listening on port (7000)
+2019-07-23 22:58:42 :: [START :: 4548fb90-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:58:42 :: [END :: 4548fb90-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:58:48 :: [START :: 49381010-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/read/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:58:48 :: [END :: 49381010-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/read/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:58:50 :: [START :: 4a1047a0-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/read/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:58:50 :: [END :: 4a1047a0-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/read/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:58:54 :: [START :: 4c6d9890-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:58:54 :: [END :: 4c6d9890-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 22:59:27 :: [START :: 607fb020-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 22:59:27 :: [END :: 607fb020-ad84-11e9-ad4f-0fa09f694e67]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:00:16 :: Server is listening on port (7000)
+2019-07-23 23:00:18 :: [START :: 7efd7960-ad84-11e9-865b-15c38d17625b]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:00:18 :: [END :: 7efd7960-ad84-11e9-865b-15c38d17625b]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:00:40 :: Server is listening on port (7000)
+2019-07-23 23:00:43 :: [START :: 8d58dbd0-ad84-11e9-9b59-b523e41af9b3]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:00:43 :: [END :: 8d58dbd0-ad84-11e9-9b59-b523e41af9b3]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:01:31 :: Server is listening on port (7000)
+2019-07-23 23:01:34 :: [START :: ac04b9f0-ad84-11e9-b669-07b226aa0153]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:01:34 :: [END :: ac04b9f0-ad84-11e9-b669-07b226aa0153]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:02:22 :: Server is listening on port (7000)
+2019-07-23 23:02:26 :: [START :: cb0065c0-ad84-11e9-9efd-e7d4db7a893c]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:02:26 :: [END :: cb0065c0-ad84-11e9-9efd-e7d4db7a893c]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:03:26 :: Server is listening on port (7000)
+2019-07-23 23:03:29 :: [START :: f07e05f0-ad84-11e9-bda4-cf8de55c8093]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:03:29 :: [END :: f07e05f0-ad84-11e9-bda4-cf8de55c8093]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:04:01 :: Server is listening on port (7000)
+2019-07-23 23:04:05 :: [START :: 05da77d0-ad85-11e9-b3b8-51a277f33080]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:04:05 :: [END :: 05da77d0-ad85-11e9-b3b8-51a277f33080]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:04:40 :: Server is listening on port (7000)
+2019-07-23 23:04:42 :: [START :: 1c26ef00-ad85-11e9-b463-bf2b5d5a7ba8]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:04:42 :: [END :: 1c26ef00-ad85-11e9-b463-bf2b5d5a7ba8]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;
+2019-07-23 23:04:57 :: [START :: 24e89a30-ad85-11e9-b463-bf2b5d5a7ba8]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200
+2019-07-23 23:04:57 :: [END :: 24e89a30-ad85-11e9-b463-bf2b5d5a7ba8]; /event/ticket/remove/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 200;

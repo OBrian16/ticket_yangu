@@ -15,3 +15,10 @@
 2019-07-23 19:00:21 :: [FATAL :: f9a85670-ad62-11e9-8e3e-17dd6fca7e6c]; /event/ticket/create/5d36da4edb56391693982878; 500; TypeError: mongo.save is not a function
 2019-07-23 19:01:02 :: [FATAL :: 11e1d090-ad63-11e9-b854-f75ad39e4cc6]; /event/ticket/create/5d36da4edb56391693982878; 500; ValidationError: ticket.0.amount: Path `amount` is required.
 2019-07-23 19:07:20 :: [FATAL :: f2e43380-ad63-11e9-9714-7f2452d1a890]; /event/ticket/read/5d372f5cda7c6836e182f285; 500; TypeError: response.filter is not a function
+2019-07-23 21:06:53 :: [FAILED :: a6d32da0-ad74-11e9-890f-4bcb482f08b1]; /event/ticket/read-many/5d36da4edb56391693982878; 404; Ticket not found.
+2019-07-23 22:48:33 :: [FATAL :: da81e390-ad82-11e9-a8fe-71fbf6daea62]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:04 :: [FATAL :: ecbbb8b0-ad82-11e9-a71b-9f70922f0a87]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:24 :: [FATAL :: f8cc19b0-ad82-11e9-b038-7bdca6d4102f]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:34 :: [FATAL :: fecea4e0-ad82-11e9-b837-6b615bd08590]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:49:56 :: [FATAL :: 0bfc5cc0-ad83-11e9-b0ef-61114e54858a]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object
+2019-07-23 22:50:42 :: [FATAL :: 27a05210-ad83-11e9-aa7b-b1187a2cf29e]; /event/ticket/update/5d36da4edb56391693982878/5d372f5cda7c6836e182f285; 500; TypeError: Cannot convert undefined or null to object

@@ -52,8 +52,8 @@ module.exports.readMany = (admin) => {
 
     return (req, res, next) => {
         const body = req.body,
-            skip = body.skip ? Number(body.skip) : null,
-            limit = body.limit ? Number(body.limit) : null;
+            skip = body.skip ? Number(body.skip) : 0,
+            limit = body.limit ? Number(body.limit) : 0;
 
         mongo.find({}).lean().select(select).skip(skip).limit(limit)
             .then(response => {
@@ -75,8 +75,8 @@ module.exports.search = (admin = false) => {
     return (req, res, next) => {
         const body = req.body,
             search = body._data.search.trim(),
-            skip = body.skip ? Number(body.skip) : null,
-            limit = body.limit ? Number(body.limit) : null;
+            skip = body.skip ? Number(body.skip) : 0,
+            limit = body.limit ? Number(body.limit) : 0;
 
         mongo.find({}).lean().select(select).skip(skip).limit(limit)
             .then(response => {
@@ -156,7 +156,7 @@ module.exports.readTicket = (req, res, next) => {
     const id = req.params.id,
         ticket_id = req.params.ticket_id;
 
-    mongo.findOne({ _id: id, 'ticket._id': ticket_id }).select(['ticket'])
+    mongo.findOne({ _id: id, 'ticket._id': ticket_id }).select(['ticket']).lean()
         .then(response => {
             if (!response) throw new Error(404);
             const data = response.ticket.filter(tck => {
@@ -183,10 +183,97 @@ module.exports.readManyTickets = (req, res, next) => {
         skip = body.skip ? Number(body.skip) : 0,
         limit = body.limit ? Number(body.limit) : 0;
 
-    mongo.findOne({ _id: id }).select(['ticket']).skip(skip).limit(limit)
+    mongo.findOne({ _id: id }).select(['ticket']).lean()
         .then(response => {
             if (!response) throw new Error(404);
-            req.body._data = response.ticket;
+            req.body._data = (skip && limit) ? response.ticket.slice(skip, limit) : response.ticket;
+            next();
+        })
+        .catch(error => {
+            if (error.message == '404') {
+                res.status(404);
+                next(new Error('Ticket not found.'));
+            } else {
+                res.status(500);
+                next(error);
+            }
+        });
+};
+
+//search ticket
+module.exports.searchTicket = (req, res, next) => {
+    const id = req.params.id,
+        body = req.body,
+        search = body._data.search.trim(),
+        skip = body.skip ? Number(body.skip) : 0,
+        limit = body.limit ? Number(body.limit) : 0;;
+
+    mongo.findOne({ _id: id }).lean()
+        .then(response => {
+            if (!response) throw new Error(404);
+            let data = new fuse((skip && limit) ? response.ticket.slice(skip, limit) : response.ticket, { keys: ['name', 'phone', 'email'] });
+            req.body._data = data.search(search);
+            next();
+        })
+        .catch(error => {
+            if (error.message == '404') {
+                res.status(404);
+                next(new Error('Ticket not found.'));
+            } else {
+                res.status(500);
+                next(error);
+            }
+        });
+};
+
+//update ticket
+module.exports.updateTicket = (req, res, next) => {
+    const id = req.params.id,
+        ticket_id = req.params.ticket_id,
+        data = req.body._data;
+
+    mongo.findOne({ _id: id })
+        .then(response => {
+            if (!response) throw new Error(404);
+            //update time
+            Object.assign(data, { updated_at: new Date() });
+            response.ticket.filter(tck => {
+                if (tck._id == ticket_id) Object.assign(tck, data)
+            });
+            return response.save();
+        })
+        .then(() => {
+            req.body._data = true;
+            next();
+        })
+        .catch(error => {
+            if (error.message == '404') {
+                res.status(404);
+                next(new Error('Ticket not found.'));
+            } else {
+                res.status(500);
+                next(error);
+            }
+        });
+};
+
+//remove ticket
+module.exports.removeTicket = (req, res, next) => {
+    const id = req.params.id,
+        ticket_id = req.params.ticket_id;
+
+    mongo.findOne({ _id: id })
+        .then(response => {
+            if (!response) throw new Error(404);
+            let data = [];
+            response.ticket.filter(tck => {
+                if (tck._id != ticket_id) data.push(tck);
+            });
+            response.ticket = data;
+            return response.save();
+        })
+        .then(() => {
+            req.body._data = true;
             next();
         })
         .catch(error => {
