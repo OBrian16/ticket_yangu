@@ -1,29 +1,22 @@
 'use strict';
 const router = require('express').Router();
 
-//require middleware
-const _terminate = require('../middleware')._terminate
-
 //require service
-const service = require('../service').event;
-
-const create = (req, res, next) => {
-    const data = req.body._data;
-
-    service.create(data)
-        .then(response => {
-            req.body._data = response;
-            next();
-        })
-        .catch(error => {
-            res.status(500);
-            next(error);
-        });
-};
+const {
+    create,
+    read,
+    readMany,
+    search,
+    update,
+    remove
+} = require('../service').event;
 
 //open end-points
-router
-    //create item
-    .post('/create', [create, _terminate]);
+router.post('/create', [create]); //create
+router.get('/read/:id', [read(true)]); //read
+router.post('/read-many', [readMany(true)]); //read many
+router.post('/search', [search(true)]); //search
+router.post('/update/:id', [update]); //update
+router.get('/remove/:id', [remove]); //remove
 
 module.exports = router;

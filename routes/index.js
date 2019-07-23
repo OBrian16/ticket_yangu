@@ -7,7 +7,8 @@ const express = require('express'),
     uuid = require('uuid');
 
 //require entity middleware
-const event = require('./event');
+const terminate = require('../middleware')._terminate,
+    event = require('./event');
 
 //configure route
 route
@@ -25,6 +26,7 @@ route.use((req, res, next) => {
 //open end-points
 route
     .all('/', (req, res) => res.status(200).json({ 'status': 'OK', 'date': new Date() }))
-    .use('/event', event);
+    .use('/event', event)
+    .use(terminate);
 
 module.exports = route;

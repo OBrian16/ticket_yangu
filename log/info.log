@@ -18,3 +18,168 @@
 2019-07-23 11:05:29 :: Server is listening on port (7000)
 2019-07-23 11:06:16 :: Server is listening on port (7000)
 2019-07-23 11:08:22 :: Server is listening on port (7000)
+2019-07-23 12:44:01 :: Server is listening on port (7000)
+2019-07-23 12:57:36 :: [START :: 4c349260-ad30-11e9-b577-5503e540a444]; /event/create; 200
+2019-07-23 12:57:36 :: [END :: 4c349260-ad30-11e9-b577-5503e540a444]; /create; 200;
+2019-07-23 12:58:38 :: [START :: 712b0130-ad30-11e9-b577-5503e540a444]; /event/create; 200
+2019-07-23 12:58:38 :: [END :: 712b0130-ad30-11e9-b577-5503e540a444]; /create; 200;
+2019-07-23 12:58:39 :: [START :: 71f5f250-ad30-11e9-b577-5503e540a444]; /event/create; 200
+2019-07-23 12:58:39 :: [END :: 71f5f250-ad30-11e9-b577-5503e540a444]; /create; 200;
+2019-07-23 13:04:11 :: Server is listening on port (7000)
+2019-07-23 13:06:48 :: Server is listening on port (7000)
+2019-07-23 13:07:01 :: Server is listening on port (7000)
+2019-07-23 13:08:38 :: Server is listening on port (7000)
+2019-07-23 13:12:28 :: Server is listening on port (7000)
+2019-07-23 13:13:02 :: [START :: 74398ed0-ad32-11e9-b038-3945efc9474e]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:13:52 :: Server is listening on port (7000)
+2019-07-23 13:13:58 :: [START :: 95b94d70-ad32-11e9-9597-5b3fc4c05b23]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:14:19 :: Server is listening on port (7000)
+2019-07-23 13:14:22 :: [START :: a3d55cf0-ad32-11e9-a8fc-bd1320275ab8]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:14:22 :: [END :: a3d55cf0-ad32-11e9-a8fc-bd1320275ab8]; /read/5d36da10db56391693982877; 200;
+2019-07-23 13:18:15 :: Server is listening on port (7000)
+2019-07-23 13:21:28 :: [START :: a23ec1f0-ad33-11e9-8b3e-d59bf239d292]; /event/read-many; 200
+2019-07-23 13:21:34 :: [START :: a55d18f0-ad33-11e9-8b3e-d59bf239d292]; /event/read-many; 200
+2019-07-23 13:23:16 :: Server is listening on port (7000)
+2019-07-23 13:23:20 :: [START :: e4e597e0-ad33-11e9-813a-7d6bbdd640d8]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:23:20 :: [END :: e4e597e0-ad33-11e9-813a-7d6bbdd640d8]; /read/5d36da10db56391693982877; 200;
+2019-07-23 13:24:33 :: Server is listening on port (7000)
+2019-07-23 13:24:35 :: [START :: 11c24600-ad34-11e9-89a7-cbce8eb06aff]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:24:35 :: [END :: 11c24600-ad34-11e9-89a7-cbce8eb06aff]; /read/5d36da10db56391693982877; 200;
+2019-07-23 13:24:46 :: Server is listening on port (7000)
+2019-07-23 13:24:50 :: Server is listening on port (7000)
+2019-07-23 13:24:53 :: [START :: 1c7c17b0-ad34-11e9-92c6-73cf0f490ff2]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:24:53 :: [END :: 1c7c17b0-ad34-11e9-92c6-73cf0f490ff2]; /read/5d36da10db56391693982877; 200;
+2019-07-23 13:24:58 :: [START :: 1f3f5660-ad34-11e9-92c6-73cf0f490ff2]; /event/create; 200
+2019-07-23 13:24:58 :: [END :: 1f3f5660-ad34-11e9-92c6-73cf0f490ff2]; /create; 200;
+2019-07-23 13:25:14 :: [START :: 2884fea0-ad34-11e9-92c6-73cf0f490ff2]; /event/read/5d36da10db563916939828770; 200
+2019-07-23 13:25:14 :: [FATAL :: 2884fea0-ad34-11e9-92c6-73cf0f490ff2]; /read/5d36da10db563916939828770; 500; CastError: Cast to ObjectId failed for value "5d36da10db563916939828770" at path "_id" for model "event"
+2019-07-23 13:28:47 :: Server is listening on port (7000)
+2019-07-23 13:28:50 :: [START :: a9567130-ad34-11e9-9656-5dadc4cb5818]; /event/read/5d36da10db563916939828770; 200
+2019-07-23 13:29:01 :: [START :: b0544c50-ad34-11e9-9656-5dadc4cb5818]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:30:41 :: Server is listening on port (7000)
+2019-07-23 13:30:44 :: [START :: ed3292d0-ad34-11e9-813d-45d9f9be9534]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 13:30:44 :: [END :: ed3292d0-ad34-11e9-813d-45d9f9be9534]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 13:31:30 :: Server is listening on port (7000)
+2019-07-23 13:35:05 :: Server is listening on port (7000)
+2019-07-23 13:36:37 :: Server is listening on port (7000)
+2019-07-23 13:40:07 :: Server is listening on port (7000)
+2019-07-23 13:40:15 :: [START :: 41b1a070-ad36-11e9-aa26-e91798dd59fd]; /event/create; 200
+2019-07-23 13:40:15 :: [END :: 41b1a070-ad36-11e9-aa26-e91798dd59fd]; /event/create; 200;
+2019-07-23 13:42:52 :: Server is listening on port (7000)
+2019-07-23 13:43:52 :: Server is listening on port (7000)
+2019-07-23 13:43:57 :: Server is listening on port (7000)
+2019-07-23 13:44:25 :: Server is listening on port (7000)
+2019-07-23 13:44:33 :: [START :: db807960-ad36-11e9-ae5b-3786763cabfc]; /event/create; 200
+2019-07-23 13:45:01 :: Server is listening on port (7000)
+2019-07-23 13:45:05 :: [START :: ee87d7b0-ad36-11e9-a8d5-37d268875081]; /event/create; 200
+2019-07-23 13:45:47 :: Server is listening on port (7000)
+2019-07-23 13:45:51 :: [START :: 0a0fe090-ad37-11e9-9a09-5b69fd082f33]; /event/create; 200
+2019-07-23 13:46:08 :: Server is listening on port (7000)
+2019-07-23 13:46:11 :: [START :: 16361380-ad37-11e9-b307-3b4c17a4423c]; /event/create; 200
+2019-07-23 13:47:07 :: Server is listening on port (7000)
+2019-07-23 13:47:09 :: [START :: 38a206e0-ad37-11e9-8fbd-c9bad5fc23cc]; /event/create; 200
+2019-07-23 13:47:16 :: Server is listening on port (7000)
+2019-07-23 13:48:05 :: Server is listening on port (7000)
+2019-07-23 13:48:09 :: [START :: 5c85a620-ad37-11e9-81df-8be44bcff430]; /event/create; 200
+2019-07-23 13:48:24 :: Server is listening on port (7000)
+2019-07-23 13:48:26 :: [START :: 66868810-ad37-11e9-9902-27bbed560576]; /event/create; 200
+2019-07-23 13:48:49 :: Server is listening on port (7000)
+2019-07-23 13:48:55 :: [START :: 778d0d50-ad37-11e9-9b33-95b2f6c4bde5]; /event/create; 200
+2019-07-23 13:49:26 :: Server is listening on port (7000)
+2019-07-23 13:49:29 :: [START :: 8bb45a90-ad37-11e9-be70-69b09005c87e]; /event/create; 200
+2019-07-23 13:49:45 :: Server is listening on port (7000)
+2019-07-23 13:51:42 :: Server is listening on port (7000)
+2019-07-23 13:52:07 :: Server is listening on port (7000)
+2019-07-23 13:53:43 :: Server is listening on port (7000)
+2019-07-23 13:53:46 :: [START :: 255f57d0-ad38-11e9-b727-d5f729da9dcb]; /event/create; 200
+2019-07-23 13:55:42 :: Server is listening on port (7000)
+2019-07-23 13:55:44 :: [START :: 6bcc0f60-ad38-11e9-9af2-2b3b893c56f1]; /event/create; 200
+2019-07-23 13:55:44 :: [FAILED :: 6bcc0f60-ad38-11e9-9af2-2b3b893c56f1]; /event/create; 200; mongo is not a constructor
+2019-07-23 13:55:51 :: [START :: 6fd8be00-ad38-11e9-9af2-2b3b893c56f1]; /event/create; 200
+2019-07-23 13:55:51 :: [FAILED :: 6fd8be00-ad38-11e9-9af2-2b3b893c56f1]; /event/create; 200; mongo is not a constructor
+2019-07-23 14:00:10 :: Server is listening on port (7000)
+2019-07-23 14:00:15 :: [START :: 0d4fb760-ad39-11e9-970b-f1512d60b7f9]; /event/create; 200
+2019-07-23 14:00:15 :: [FATAL :: 0d4fb760-ad39-11e9-970b-f1512d60b7f9]; /event/create; 500; TypeError: Assignment to constant variable.
+2019-07-23 14:00:41 :: Server is listening on port (7000)
+2019-07-23 14:00:45 :: [START :: 1eea1830-ad39-11e9-87c5-e736fd76aca5]; /event/create; 200
+2019-07-23 14:00:45 :: [END :: 1eea1830-ad39-11e9-87c5-e736fd76aca5]; /event/create; 200;
+2019-07-23 14:03:18 :: Server is listening on port (7000)
+2019-07-23 14:05:48 :: Server is listening on port (7000)
+2019-07-23 14:06:14 :: Server is listening on port (7000)
+2019-07-23 14:08:13 :: Server is listening on port (7000)
+2019-07-23 14:11:40 :: Server is listening on port (7000)
+2019-07-23 14:13:05 :: Server is listening on port (7000)
+2019-07-23 14:17:05 :: Server is listening on port (7000)
+2019-07-23 14:18:39 :: Server is listening on port (7000)
+2019-07-23 14:18:49 :: Server is listening on port (7000)
+2019-07-23 14:19:50 :: [START :: c956dea0-ad3b-11e9-8c59-d3a0dfef11dc]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:19:50 :: [FAILED :: c956dea0-ad3b-11e9-8c59-d3a0dfef11dc]; /event/read/5d36da10db56391693982877; 200; select is not defined
+2019-07-23 14:20:22 :: Server is listening on port (7000)
+2019-07-23 14:20:25 :: [START :: de284e90-ad3b-11e9-98ba-7988c297dfe4]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:20:25 :: [END :: de284e90-ad3b-11e9-98ba-7988c297dfe4]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:24:06 :: Server is listening on port (7000)
+2019-07-23 14:25:26 :: Server is listening on port (7000)
+2019-07-23 14:25:34 :: [START :: 9650ee00-ad3c-11e9-bcde-898d7f9dff18]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:25:34 :: [END :: 9650ee00-ad3c-11e9-bcde-898d7f9dff18]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:26:47 :: Server is listening on port (7000)
+2019-07-23 14:27:34 :: Server is listening on port (7000)
+2019-07-23 14:27:38 :: Server is listening on port (7000)
+2019-07-23 14:28:18 :: [START :: f8534300-ad3c-11e9-9675-f1ede45d13de]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:28:18 :: [END :: f8534300-ad3c-11e9-9675-f1ede45d13de]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:29:47 :: Server is listening on port (7000)
+2019-07-23 14:29:59 :: [START :: 34845990-ad3d-11e9-ba8b-b1341313b873]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:29:59 :: [END :: 34845990-ad3d-11e9-ba8b-b1341313b873]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:30:13 :: Server is listening on port (7000)
+2019-07-23 14:30:42 :: Server is listening on port (7000)
+2019-07-23 14:30:47 :: Server is listening on port (7000)
+2019-07-23 14:30:49 :: [START :: 5256a090-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:30:49 :: [END :: 5256a090-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:31:14 :: [START :: 61503ed0-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db563916939828770; 200
+2019-07-23 14:31:14 :: [FATAL :: 61503ed0-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db563916939828770; 500; CastError: Cast to ObjectId failed for value "5d36da10db563916939828770" at path "_id" for model "event"
+2019-07-23 14:31:23 :: [START :: 66b46720-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db56391693982870; 200
+2019-07-23 14:31:23 :: [FAILED :: 66b46720-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db56391693982870; 404; Event not found.
+2019-07-23 14:31:50 :: Server is listening on port (7000)
+2019-07-23 14:31:55 :: [START :: 797cc0a0-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read/5d36da10db56391693982870; 200
+2019-07-23 14:31:55 :: [FAILED :: 797cc0a0-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read/5d36da10db56391693982870; 404; Event not found.
+2019-07-23 14:32:15 :: [START :: 85b60660-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read/5d36da10db56391693982870; 200
+2019-07-23 14:32:15 :: [FAILED :: 85b60660-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read/5d36da10db56391693982870; 404; Event not found.
+2019-07-23 14:32:29 :: [START :: 8dc8d3f0-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read-many; 200
+2019-07-23 14:32:29 :: [END :: 8dc8d3f0-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read-many; 200;
+2019-07-23 14:33:03 :: [START :: a2068f60-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200
+2019-07-23 14:33:03 :: [FAILED :: a2068f60-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200; Cannot read property 'trim' of undefined
+2019-07-23 14:33:19 :: [START :: ab9c7a80-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200
+2019-07-23 14:33:19 :: [END :: ab9c7a80-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200;
+2019-07-23 14:33:36 :: [START :: b5b21cf0-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200
+2019-07-23 14:33:36 :: [END :: b5b21cf0-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200;
+2019-07-23 14:34:41 :: Server is listening on port (7000)
+2019-07-23 14:34:43 :: [START :: ddd07fb0-ad3d-11e9-a0c7-cb6c7bd35cc1]; /event/search; 200
+2019-07-23 14:34:43 :: [END :: ddd07fb0-ad3d-11e9-a0c7-cb6c7bd35cc1]; /event/search; 200;
+2019-07-23 14:40:04 :: Server is listening on port (7000)
+2019-07-23 14:40:40 :: Server is listening on port (7000)
+2019-07-23 14:40:45 :: Server is listening on port (7000)
+2019-07-23 14:42:28 :: [START :: f2d9d310-ad3e-11e9-92fb-559a3655f22c]; /event/update/5d36da10db56391693982870; 200
+2019-07-23 14:42:28 :: [END :: f2d9d310-ad3e-11e9-92fb-559a3655f22c]; /event/update/5d36da10db56391693982870; 200;
+2019-07-23 14:42:43 :: [START :: fbff7030-ad3e-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:42:43 :: [END :: fbff7030-ad3e-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:43:00 :: [START :: 05f4b960-ad3f-11e9-92fb-559a3655f22c]; /event/update/5d36da10db56391693982870; 200
+2019-07-23 14:43:00 :: [END :: 05f4b960-ad3f-11e9-92fb-559a3655f22c]; /event/update/5d36da10db56391693982870; 200;
+2019-07-23 14:43:05 :: [START :: 08b252c0-ad3f-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:43:05 :: [END :: 08b252c0-ad3f-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:43:08 :: [START :: 0aabffe0-ad3f-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:43:08 :: [END :: 0aabffe0-ad3f-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:43:15 :: [START :: 0eb3a570-ad3f-11e9-92fb-559a3655f22c]; /event/update/5d36da10db56391693982877; 200
+2019-07-23 14:43:15 :: [END :: 0eb3a570-ad3f-11e9-92fb-559a3655f22c]; /event/update/5d36da10db56391693982877; 200;
+2019-07-23 14:43:18 :: [START :: 10e24540-ad3f-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:43:18 :: [END :: 10e24540-ad3f-11e9-92fb-559a3655f22c]; /event/read/5d36da10db56391693982877; 200;
+2019-07-23 14:43:59 :: Server is listening on port (7000)
+2019-07-23 14:44:30 :: Server is listening on port (7000)
+2019-07-23 14:47:50 :: Server is listening on port (7000)
+2019-07-23 14:48:11 :: Server is listening on port (7000)
+2019-07-23 14:48:51 :: Server is listening on port (7000)
+2019-07-23 14:48:55 :: Server is listening on port (7000)
+2019-07-23 14:49:16 :: Server is listening on port (7000)
+2019-07-23 14:51:07 :: [START :: 27faf0a0-ad40-11e9-bbde-87a6cbbbd24d]; /event/remove/5d36da10db56391693982877; 200
+2019-07-23 14:51:07 :: [END :: 27faf0a0-ad40-11e9-bbde-87a6cbbbd24d]; /event/remove/5d36da10db56391693982877; 200;
+2019-07-23 14:51:10 :: [START :: 2a0343c0-ad40-11e9-bbde-87a6cbbbd24d]; /event/read/5d36da10db56391693982877; 200
+2019-07-23 14:51:10 :: [FAILED :: 2a0343c0-ad40-11e9-bbde-87a6cbbbd24d]; /event/read/5d36da10db56391693982877; 404; Event not found.
+2019-07-23 14:51:39 :: Server is listening on port (7000)

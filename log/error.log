@@ -1,0 +1,11 @@
+2019-07-23 13:25:14 :: [FATAL :: 2884fea0-ad34-11e9-92c6-73cf0f490ff2]; /read/5d36da10db563916939828770; 500; CastError: Cast to ObjectId failed for value "5d36da10db563916939828770" at path "_id" for model "event"
+2019-07-23 13:55:44 :: [FAILED :: 6bcc0f60-ad38-11e9-9af2-2b3b893c56f1]; /event/create; 200; mongo is not a constructor
+2019-07-23 13:55:51 :: [FAILED :: 6fd8be00-ad38-11e9-9af2-2b3b893c56f1]; /event/create; 200; mongo is not a constructor
+2019-07-23 14:00:15 :: [FATAL :: 0d4fb760-ad39-11e9-970b-f1512d60b7f9]; /event/create; 500; TypeError: Assignment to constant variable.
+2019-07-23 14:19:50 :: [FAILED :: c956dea0-ad3b-11e9-8c59-d3a0dfef11dc]; /event/read/5d36da10db56391693982877; 200; select is not defined
+2019-07-23 14:31:14 :: [FATAL :: 61503ed0-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db563916939828770; 500; CastError: Cast to ObjectId failed for value "5d36da10db563916939828770" at path "_id" for model "event"
+2019-07-23 14:31:23 :: [FAILED :: 66b46720-ad3d-11e9-94f4-e301eb323770]; /event/read/5d36da10db56391693982870; 404; Event not found.
+2019-07-23 14:31:55 :: [FAILED :: 797cc0a0-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read/5d36da10db56391693982870; 404; Event not found.
+2019-07-23 14:32:15 :: [FAILED :: 85b60660-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read/5d36da10db56391693982870; 404; Event not found.
+2019-07-23 14:33:03 :: [FAILED :: a2068f60-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200; Cannot read property 'trim' of undefined
+2019-07-23 14:51:10 :: [FAILED :: 2a0343c0-ad40-11e9-bbde-87a6cbbbd24d]; /event/read/5d36da10db56391693982877; 404; Event not found.

@@ -14,7 +14,6 @@ const errorHandler = (error, req, res, next) => {
             error: 'Internal server error.'
         });
     } else {
-        if (res.statusCode == 200) res.statusCode(400);
         log.error(`[FAILED :: ${req.reqID}]; ${req.url}; ${res.statusCode}; ${error.message}`);
         res.json({
             status: 'FAILED',
