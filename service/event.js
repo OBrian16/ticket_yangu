@@ -124,3 +124,78 @@ module.exports.remove = (req, res, next) => {
             next(error);
         });
 };
+
+//create ticket
+module.exports.createTicket = (req, res, next) => {
+    const id = req.params.id,
+        data = req.body._data;
+
+    mongo.findOne({ _id: id })
+        .then(response => {
+            if (!response) throw new Error('404');
+            response.ticket.push(data);
+            return response.save(response);
+        })
+        .then(() => {
+            req.body._data = true;
+            next();
+        })
+        .catch(error => {
+            if (error.message == '404') {
+                res.status(404);
+                next(new Error('Event not found.'));
+            } else {
+                res.status(500);
+                next(error);
+            }
+        });
+};
+
+//read ticket
+module.exports.readTicket = (req, res, next) => {
+    const id = req.params.id,
+        ticket_id = req.params.ticket_id;
+
+    mongo.findOne({ _id: id, 'ticket._id': ticket_id }).select(['ticket'])
+        .then(response => {
+            if (!response) throw new Error(404);
+            const data = response.ticket.filter(tck => {
+                if (tck._id == ticket_id) return tck;
+            });
+            req.body._data = data[0];
+            next();
+        })
+        .catch(error => {
+            if (error.message == '404') {
+                res.status(404);
+                next(new Error('Event not found.'));
+            } else {
+                res.status(500);
+                next(error);
+            }
+        });
+};
+
+//read many ticket
+module.exports.readManyTickets = (req, res, next) => {
+    const id = req.params.id,
+        body = req.body,
+        skip = body.skip ? Number(body.skip) : 0,
+        limit = body.limit ? Number(body.limit) : 0;
+
+    mongo.findOne({ _id: id }).select(['ticket']).skip(skip).limit(limit)
+        .then(response => {
+            if (!response) throw new Error(404);
+            req.body._data = response.ticket;
+            next();
+        })
+        .catch(error => {
+            if (error.message == '404') {
+                res.status(404);
+                next(new Error('Ticket not found.'));
+            } else {
+                res.status(500);
+                next(error);
+            }
+        });
+};

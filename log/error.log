@@ -9,3 +9,9 @@
 2019-07-23 14:32:15 :: [FAILED :: 85b60660-ad3d-11e9-aed3-5f3ad3d4c932]; /event/read/5d36da10db56391693982870; 404; Event not found.
 2019-07-23 14:33:03 :: [FAILED :: a2068f60-ad3d-11e9-aed3-5f3ad3d4c932]; /event/search; 200; Cannot read property 'trim' of undefined
 2019-07-23 14:51:10 :: [FAILED :: 2a0343c0-ad40-11e9-bbde-87a6cbbbd24d]; /event/read/5d36da10db56391693982877; 404; Event not found.
+2019-07-23 18:58:52 :: [FAILED :: c48ff600-ad62-11e9-8c3a-6d7e4e7a40f5]; /event/ticket/create/5d36da10db56391693982877; 404; Event not found.
+2019-07-23 18:59:29 :: [FAILED :: daa334c0-ad62-11e9-8c3a-6d7e4e7a40f5]; /event/ticket/create/5d36da10db56391693982877; 404; Event not found.
+2019-07-23 19:00:05 :: [FAILED :: f021d4a0-ad62-11e9-8e3e-17dd6fca7e6c]; /event/ticket/create/5d36da10db56391693982877; 404; Event not found.
+2019-07-23 19:00:21 :: [FATAL :: f9a85670-ad62-11e9-8e3e-17dd6fca7e6c]; /event/ticket/create/5d36da4edb56391693982878; 500; TypeError: mongo.save is not a function
+2019-07-23 19:01:02 :: [FATAL :: 11e1d090-ad63-11e9-b854-f75ad39e4cc6]; /event/ticket/create/5d36da4edb56391693982878; 500; ValidationError: ticket.0.amount: Path `amount` is required.
+2019-07-23 19:07:20 :: [FATAL :: f2e43380-ad63-11e9-9714-7f2452d1a890]; /event/ticket/read/5d372f5cda7c6836e182f285; 500; TypeError: response.filter is not a function

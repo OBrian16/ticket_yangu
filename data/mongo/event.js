@@ -3,15 +3,10 @@ const config = require('./config');
 
 //ticket schema
 const ticket = config.mongo.Schema({
-    ticket_number: {
-        type: String,
-        required: true
-    },
     name: {
         type: String,
         required: true
     },
-    id_number: String,
     phone: {
         type: Number,
         required: true
