@@ -1,19 +1,48 @@
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Container, Divider, Header, List, Segment } from 'semantic-ui-react'
+import { Header, Responsive, Segment, Item, Label, Button, Image, Divider, Form, Popup, Grid, Input, List } from 'semantic-ui-react'
+
 import Footer from '../pages/footer'
 
-class Contacts extends Component {
+const paragraph = <Image src='https://react.semantic-ui.com/images/wireframe/short-paragraph.png' />
+
+
+// Heads up!
+// We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
+// For more advanced usage please check Responsive docs under the "Usage" section.
+const getWidth = () => {
+    const isSSR = typeof window === 'undefined'
+
+    return isSSR ? Responsive.onlyTablet.minWidth : window.innerWidth
+}
+
+
+class DesktopContainer extends Component {
+    state = { name: '', email: '', submittedName: '', submittedEmail: '' }
+
+    handleChange = (e, { name, value }) => this.setState({ [name]: value })
+
+    handleSubmit = () => {
+        const { name, email } = this.state
+
+        this.setState({ submittedName: name, submittedEmail: email })
+    }
     render() {
+        const { children } = this.props
+        const { name, email, submittedName, submittedEmail } = this.state
+
+
         return (
-            <Container>
-                <style>{`
-              html, body {
-                background-color: #F2F3F4 !important;
-                min-height: 10em;
-              }
-            `}
-                </style>
-                <Segment style={{ padding: '5em 30em' }} raised >
+
+            <Responsive getWidth={getWidth} minWidth={Responsive.onlyTablet.minWidth}>
+
+                <Segment
+                    secondary
+                    textAlign='left'
+                    style={{ minHeight: 300, padding: '5em 30em' }}
+                    vertical
+                >
+                                    <Segment style={{ padding: '5em 30em' }} raised >
                     <Header as='h3' textAlign='left' color=''>
                         <Header.Content >
                             SUPPORT
@@ -57,16 +86,36 @@ class Contacts extends Component {
                     </List>
                 </Segment>
 
-                <Segment
-                    inverted
-                    textAlign='center'
-                    style={{ minHeight: 600, padding: '6em 60em' }}  >                  
-                    <Footer />
                 </Segment>
 
-            </Container >
-        );
+
+                {children}
+            </Responsive>
+        )
     }
 }
 
-export default Contacts
+DesktopContainer.propTypes = {
+    children: PropTypes.node,
+}
+
+
+const ResponsiveContainer = ({ children }) => (
+    <div>
+        <DesktopContainer>{children}</DesktopContainer>
+    </div>
+)
+
+ResponsiveContainer.propTypes = {
+    children: PropTypes.node,
+}
+
+const HomepageLayout = () => (
+    <ResponsiveContainer>
+
+        <Segment inverted vertical style={{ padding: '10em 0em' }}>
+            <Footer />
+        </Segment>
+    </ResponsiveContainer>
+)
+export default HomepageLayout
