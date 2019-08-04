@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Header, Responsive, Segment, Item, Label, Button, Image, Divider, Form } from 'semantic-ui-react'
+import { Header, Responsive, Segment, Item, Label, Button, Image, Divider, Form, Popup, Grid } from 'semantic-ui-react'
 
 import Footer from '../pages/footer'
 
@@ -127,7 +127,37 @@ class DesktopContainer extends Component {
                                 width={6} />
                         </Form>
 
-                        <Form.Button content='Make Payment' color='blue' />
+                        <Popup wide trigger={<Button content='Make Payment' color='blue' />} on='click'>
+                            <Grid divided columns='equal'>
+                                <Grid.Column>
+                                    <Popup
+                                        trigger={<Button color='green' content='M-PESA' fluid />}
+                                        content='Enter specified amount prompted on M-PESA menu'
+                                        position='top center'
+                                        size='tiny'
+                                        inverted
+                                    />
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <Popup
+                                        trigger={<Button color='red' content='Airtel Money' fluid />}
+                                        content='Enter specified amount prompted on M-PESA menu'
+                                        position='top center'
+                                        size='tiny'
+                                        inverted
+                                    />
+                                </Grid.Column>
+                                <Grid.Column>
+                                    <Popup
+                                        trigger={<Button color='yellow' content='VISA Card' fluid />}
+                                        content='Pay using your VISA Card'
+                                        position='top center'
+                                        size='tiny'
+                                        inverted
+                                    />
+                                </Grid.Column>
+                            </Grid>
+                        </Popup>
 
                     </Segment>
 
