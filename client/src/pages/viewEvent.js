@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Header, Responsive, Segment, Item, Label, Button, Image, Divider, Form, Popup, Grid } from 'semantic-ui-react'
+import { Header, Responsive, Segment, Item, Label, Button, Image, Divider, Form, Popup, Grid, Rating } from 'semantic-ui-react'
 
 import Footer from '../pages/footer'
 
@@ -69,6 +69,7 @@ class DesktopContainer extends Component {
                                     <Item.Extra>
                                         <Label>JKUAT</Label>
                                         <Label icon='globe' content='Additional Languages' />
+                                        <Rating icon='star' defaultRating={4} maxRating={5} />
                                     </Item.Extra>
 
                                     <Divider />
