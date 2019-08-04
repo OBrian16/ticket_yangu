@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import { Button,  Grid, Header, Responsive, Segment } from 'semantic-ui-react'
+import { Link } from 'react-router-dom'
+import { Button, Grid, Header, Responsive, Segment } from 'semantic-ui-react'
 
 import Footer from '../pages/footer'
 import CarouselPage from '../carousel/image'
@@ -73,7 +74,8 @@ const HomepageLayout = () => (
                     </Header>
                 </Grid.Column>
 
-                <Grid.Column floated='left' width={4}>
+                <Grid.Column floated='left' width={4}
+                    as={Link} name='EVENTS' to='events'>
                     <Button content='More Events' color='red' icon='calendar alternate outline' />
                 </Grid.Column>
             </Grid>
