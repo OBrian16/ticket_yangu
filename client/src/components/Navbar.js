@@ -64,7 +64,7 @@ class Navbar extends Component {
                     </Menu.Item>
 
                     <Menu.Item>
-                        <Button as={Link} name='tickets' to='Tickets' color='teal' >
+                        <Button as={Link} name='tickets' to='/tickets' color='teal' >
                             <Icon name='ticket' />
                             Tickets
                             </Button>

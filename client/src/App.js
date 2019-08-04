@@ -12,6 +12,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import Home from './components/Home'
 import Events from './components/Events'
+import Tickets from './components/Tickets';
 import ViewEvent from './pages/viewEvent'
 import Contacts from './components/Contacts'
 import PrivateRoute from "./components/private-route/PrivateRoute";
@@ -54,6 +55,7 @@ class App extends Component {
               <Route exact path="/events" component={Events} />
               <Route exact path="/contacts" component={Contacts} />
               <Route exact path="/viewEvent" component={ViewEvent} />
+              <Route exact path="/tickets" component={Tickets} />
               <Switch>
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
               </Switch>
